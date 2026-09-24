@@ -50,29 +50,39 @@ export const NetworkCoverageScreen: React.FC<NetworkCoverageScreenProps> = ({
           </p>
         </div>
 
-        {/* Catchment Mode Selector */}
-        <div className="flex items-center gap-1 p-1 bg-white border border-[#DDE3EA] rounded-xl text-xs">
+        {/* Actions: Catchment Mode & Data Manager Link */}
+        <div className="flex items-center gap-2 flex-wrap">
           <button
-            onClick={() => setCatchmentMode('travel_time')}
-            className={`px-3 py-1.5 rounded-lg font-semibold flex items-center gap-1.5 transition-all ${
-              catchmentMode === 'travel_time'
-                ? 'bg-[#2563EB] text-white shadow-2xs'
-                : 'text-[#607080] hover:text-[#17212B]'
-            }`}
+            onClick={() => onNavigateToScreen('pasar-poi-demografi')}
+            className="px-3 py-1.5 bg-blue-50 border border-blue-200 text-blue-700 hover:bg-blue-100 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer shadow-2xs"
           >
-            <Car className="w-3.5 h-3.5" />
-            <span>Isochrone Waktu Tempuh (15 mnt)</span>
+            <Network className="w-3.5 h-3.5" />
+            <span>Kelola / Upload Data Jaringan</span>
           </button>
-          <button
-            onClick={() => setCatchmentMode('radius')}
-            className={`px-3 py-1.5 rounded-lg font-semibold transition-all ${
-              catchmentMode === 'radius'
-                ? 'bg-[#2563EB] text-white shadow-2xs'
-                : 'text-[#607080] hover:text-[#17212B]'
-            }`}
-          >
-            Radius Garis Lurus (5 km)
-          </button>
+
+          <div className="flex items-center gap-1 p-1 bg-white border border-[#DDE3EA] rounded-xl text-xs">
+            <button
+              onClick={() => setCatchmentMode('travel_time')}
+              className={`px-3 py-1.5 rounded-lg font-semibold flex items-center gap-1.5 transition-all ${
+                catchmentMode === 'travel_time'
+                  ? 'bg-[#2563EB] text-white shadow-2xs'
+                  : 'text-[#607080] hover:text-[#17212B]'
+              }`}
+            >
+              <Car className="w-3.5 h-3.5" />
+              <span>Isochrone Waktu Tempuh (15 mnt)</span>
+            </button>
+            <button
+              onClick={() => setCatchmentMode('radius')}
+              className={`px-3 py-1.5 rounded-lg font-semibold transition-all ${
+                catchmentMode === 'radius'
+                  ? 'bg-[#2563EB] text-white shadow-2xs'
+                  : 'text-[#607080] hover:text-[#17212B]'
+              }`}
+            >
+              Radius Garis Lurus (5 km)
+            </button>
+          </div>
         </div>
       </div>
 

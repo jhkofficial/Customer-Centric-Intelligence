@@ -1,4 +1,7 @@
 import { StrategicPriority, RegencyData, CustomerProfile, CandidateLocation, CampaignData, AuditEvent } from '../types';
+import { HONDA_CUSTOMERS, DEFAULT_HONDA_CUSTOMER } from './hondaCustomers';
+
+export { HONDA_CUSTOMERS };
 
 export const GLOBAL_METRICS = {
   totalCustomers: '1.248.560',
@@ -429,33 +432,7 @@ export const REGENCIES_DATA: RegencyData[] = [
   }
 ];
 
-export const DEMO_CUSTOMER_360: CustomerProfile = {
-  id: 'cust-008421',
-  maskedId: 'CUST-JTG-008421',
-  maskedName: 'R*** S******',
-  segment: 'High Value — At Risk',
-  area: 'Semarang Timur',
-  kabupaten: 'Kota Semarang',
-  customerValueScore: 88,
-  retentionRiskScore: 81,
-  riskCategory: 'Tinggi',
-  preferredChannel: 'WhatsApp',
-  consentStatus: 'Diizinkan',
-  nearestServicePointKm: 7.8,
-  tenureMonths: 38,
-  monthlySpendAvg: 'Rp4.650.000',
-  lastTransactionDate: '12 Agustus 2026',
-  lastInteractionDate: '28 Agustus 2026',
-  complaintStatus: 'Dalam Proses',
-  nextBestAction: {
-    title: 'Hubungi kembali dengan penawaran layanan personal',
-    reason: 'Frekuensi layanan menurun (-35% dalam 60 hari), nilai pelanggan tinggi (tier Platinum), dan riwayat respons positif via WhatsApp.',
-    recommendedChannel: 'WhatsApp',
-    recommendedTiming: 'Kamis, 10.00–12.00 WIB',
-    approvalStatus: 'Perlu persetujuan',
-    expectedConversionRate: '41,5%'
-  }
-};
+export const DEMO_CUSTOMER_360: CustomerProfile = DEFAULT_HONDA_CUSTOMER;
 
 export const CANDIDATE_LOCATIONS: CandidateLocation[] = [
   {

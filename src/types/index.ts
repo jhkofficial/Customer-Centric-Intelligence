@@ -73,6 +73,83 @@ export interface RegencyData {
   svgPath: string;
 }
 
+export interface HondaVehicle {
+  model: string;
+  plateNumberMasked: string;
+  year: number;
+  vinMasked: string;
+  odometerKm: number;
+  engineCapacity: string;
+  color: string;
+  purchaseType: 'Cash' | 'Kredit (FIFGROUP)' | 'Kredit (OTO)' | 'Kredit (Adira)';
+  dealerPurchase: string;
+  purchaseDate: string;
+  kpbStatus: string;
+  warrantyStatus: string;
+}
+
+export interface HondaTransaction {
+  id: string;
+  date: string;
+  type: 'Unit Sales' | 'Servis AHASS' | 'Spare Part HGP' | 'Aksesoris HGA' | 'Apparel & Helm';
+  description: string;
+  outlet: string;
+  amount: string;
+  status: 'Lunas' | 'Selesai' | 'Kredit Aktif';
+}
+
+export interface HondaServiceRecord {
+  id: string;
+  date: string;
+  serviceType: string;
+  ahassName: string;
+  mechanicName: string;
+  odometerKm: number;
+  cost: string;
+  notes: string;
+  kpbStatus: 'Gratis Jasa & Oli' | 'Gratis Jasa' | 'Reguler Berbayar';
+}
+
+export interface HondaInteraction {
+  id: string;
+  date: string;
+  channel: 'WhatsApp Motorku X' | 'Telepon Follow Up' | 'Kunjungan AHASS' | 'Aplikasi Motorku X' | 'SMS Blast';
+  subject: string;
+  sentiment: 'Positif' | 'Netral' | 'Negatif';
+  agent: string;
+  outcome: string;
+}
+
+export interface HondaCampaignRecord {
+  id: string;
+  campaignName: string;
+  channel: 'WhatsApp' | 'Push Motorku X' | 'SMS' | 'Email';
+  sentDate: string;
+  status: 'Dikonversi' | 'Dibuka & Klik' | 'Terkirim' | 'Diabaikan';
+  incentive: string;
+}
+
+export interface HondaComplaint {
+  id: string;
+  ticketNo: string;
+  date: string;
+  category: 'Waktu Tunggu AHASS' | 'Ketersediaan Spare Part' | 'Kualitas Servis (Tarikan/Gredek)' | 'Fasilitas Ruang Tunggu' | 'Pelayanan Front Desk' | 'Dokumen STNK/Plat';
+  status: 'Selesai' | 'Dalam Penanganan' | 'Eskalasi Regional';
+  description: string;
+  resolution: string;
+}
+
+export interface HondaLocationAccess {
+  addressMasked: string;
+  district: string;
+  regency: string;
+  nearestAhass: string;
+  distanceKm: number;
+  travelTimeMin: number;
+  alternateAhass: string;
+  alternateDistanceKm: number;
+}
+
 export interface CustomerProfile {
   id: string;
   maskedId: string;
@@ -99,6 +176,15 @@ export interface CustomerProfile {
     approvalStatus: 'Perlu persetujuan' | 'Disetujui' | 'Draft';
     expectedConversionRate: string;
   };
+  // Honda Automotive & After-Sales 360 Attributes
+  vehicle?: HondaVehicle;
+  transactions?: HondaTransaction[];
+  serviceHistory?: HondaServiceRecord[];
+  interactions?: HondaInteraction[];
+  campaigns?: HondaCampaignRecord[];
+  complaints?: HondaComplaint[];
+  locationAccess?: HondaLocationAccess;
+  behavioralAlert?: string;
 }
 
 export interface CandidateLocation {
