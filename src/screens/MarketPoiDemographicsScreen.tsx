@@ -138,7 +138,7 @@ export const MarketPoiDemographicsScreen: React.FC<MarketPoiDemographicsScreenPr
         'Longitude': p.longitude,
         'Skor Keramaian (1-10)': p.crowdLevel,
         'Lalu Lintas Harian': p.dailyTraffic,
-        'AHASS Terdekat': p.nearestAhass,
+        'Dealer Terdekat': p.nearestAhass,
         'Catatan': p.notes
       }));
     } else if (activeCategory === 'pasar') {
@@ -243,7 +243,7 @@ export const MarketPoiDemographicsScreen: React.FC<MarketPoiDemographicsScreenPr
           longitude: Number(getVal(r, 'Longitude', 'lng')) || 110.42,
           crowdLevel: Number(getVal(r, 'Tingkat Keramaian (1-10)', 'crowdLevel')) || 8.5,
           dailyTraffic: getVal(r, 'Potensi Pelanggan Harian', 'dailyTraffic') || '10.000 / Hari',
-          nearestAhass: getVal(r, 'Dekat Outlet AHASS', 'nearestAhass') || 'AHASS Terdekat (1.0 km)',
+          nearestAhass: getVal(r, 'Dekat Outlet Dealer', 'nearestAhass') || 'Dealer Terdekat (1.0 km)',
           notes: getVal(r, 'Keterangan', 'Catatan', 'notes') || 'Data POI diimpor pengguna.'
         }));
 
@@ -264,7 +264,7 @@ export const MarketPoiDemographicsScreen: React.FC<MarketPoiDemographicsScreenPr
           competitorShare: Number(getVal(r, 'Pangsa Pasar Kompetitor (%)', 'competitorShare')) || 25.0,
           annualTargetUnits: Number(getVal(r, 'Target Penjualan Tahunan', 'annualTargetUnits')) || 18000,
           growthCategory: (getVal(r, 'Kategori Pertumbuhan', 'growthCategory') || 'Moderat') as any,
-          strategicDefense: getVal(r, 'Strategi Utama', 'strategicDefense') || 'Program Peningkatan Penetrasi AHASS',
+          strategicDefense: getVal(r, 'Strategi Utama', 'strategicDefense') || 'Program Peningkatan Penetrasi Dealer',
           opportunityValue: getVal(r, 'Nilai Peluang', 'opportunityValue') || 'Rp5 Miliar'
         }));
 
@@ -298,8 +298,8 @@ export const MarketPoiDemographicsScreen: React.FC<MarketPoiDemographicsScreenPr
       } else if (activeCategory === 'jaringan') {
         const newRecords: NetworkRecord[] = importedRows.map((r, i) => ({
           id: getVal(r, 'Kode Jaringan', 'id') || `NET-IMP-${String(i + 1).padStart(3, '0')}`,
-          outletName: getVal(r, 'Nama Outlet / Bengkel', 'outletName') || 'AHASS Mitra Baru',
-          networkType: (getVal(r, 'Tipe Jaringan', 'networkType') || 'Bengkel Resmi AHASS (H23)') as any,
+          outletName: getVal(r, 'Nama Outlet / Bengkel', 'outletName') || 'Dealer Mitra Baru',
+          networkType: (getVal(r, 'Tipe Jaringan', 'networkType') || 'Bengkel Resmi Dealer (H23)') as any,
           regency: getVal(r, 'Kabupaten / Kota', 'regency') || 'Kota Semarang',
           district: getVal(r, 'Kecamatan', 'district') || 'Semarang Selatan',
           address: getVal(r, 'Alamat Lengkap', 'address') || 'Jl. Raya Utama No. 88',
@@ -313,10 +313,10 @@ export const MarketPoiDemographicsScreen: React.FC<MarketPoiDemographicsScreenPr
 
         if (mode === 'replace') {
           setNetworkList(newRecords);
-          onShowToast(`Berhasil mengganti data Jaringan AHASS dengan ${newRecords.length} data baru.`);
+          onShowToast(`Berhasil mengganti data Jaringan Dealer dengan ${newRecords.length} data baru.`);
         } else {
           setNetworkList((prev) => [...prev, ...newRecords]);
-          onShowToast(`Berhasil menambahkan ${newRecords.length} jaringan outlet AHASS baru.`);
+          onShowToast(`Berhasil menambahkan ${newRecords.length} jaringan outlet Dealer baru.`);
         }
       } else if (activeCategory === 'campaign') {
         const newRecords: SpatialCampaignRecord[] = importedRows.map((r, i) => ({
@@ -375,7 +375,7 @@ export const MarketPoiDemographicsScreen: React.FC<MarketPoiDemographicsScreenPr
             </span>
           </div>
           <p className="text-xs text-[#607080]">
-            Pusat analitik spasial untuk titik keramaian (POI), potensi pasar motor Honda, demografi BPS, jaringan bengkel AHASS, dan kampanye wilayah.
+            Pusat analitik spasial untuk titik keramaian (POI), potensi pasar motor Honda, demografi BPS, jaringan bengkel Dealer, dan kampanye wilayah.
           </p>
         </div>
 
@@ -462,7 +462,7 @@ export const MarketPoiDemographicsScreen: React.FC<MarketPoiDemographicsScreenPr
           { id: 'poi', label: '1. Titik Keramaian (POI)', icon: Building2, count: poiList.length },
           { id: 'pasar', label: '2. Potensi Pasar & Penetrasi', icon: BarChart3, count: marketList.length },
           { id: 'demografi', label: '3. Demografi Wilayah', icon: Users, count: demographyList.length },
-          { id: 'jaringan', label: '4. Jaringan AHASS & Dealer', icon: Network, count: networkList.length },
+          { id: 'jaringan', label: '4. Jaringan Dealer', icon: Network, count: networkList.length },
           { id: 'campaign', label: '5. Campaign Spasial Wilayah', icon: Send, count: campaignList.length }
         ].map((cat) => {
           const Icon = cat.icon;
@@ -514,7 +514,7 @@ export const MarketPoiDemographicsScreen: React.FC<MarketPoiDemographicsScreenPr
           />
 
           <div className="mt-3 pt-3 border-t border-[#DDE3EA] flex items-center justify-between text-[11px] text-[#607080]">
-            <span>Sumber Data: BPS Jateng, Astra Honda Motor &amp; Geocoding Open Data</span>
+            <span>Sumber Data: BPS Jateng, Dealer Honda Motor &amp; Geocoding Open Data</span>
             <span className="text-emerald-700 font-semibold flex items-center gap-1">
               <CheckCircle2 className="w-3.5 h-3.5" />
               <span>Layer Aktif: {getCategoryCount(activeCategory)} Titik/Entitas</span>
@@ -560,7 +560,7 @@ export const MarketPoiDemographicsScreen: React.FC<MarketPoiDemographicsScreenPr
             {/* Category Snapshot */}
             <div>
               <div className="text-[11px] font-bold text-[#17212B] uppercase tracking-wider mb-2">
-                Komposisi POI &amp; Jaringan AHASS di {selectedReg.name}
+                Komposisi POI &amp; Jaringan Dealer di {selectedReg.name}
               </div>
               <div className="space-y-2 text-xs">
                 <div className="flex items-center justify-between p-2 rounded bg-slate-50 border border-[#DDE3EA]">
@@ -590,7 +590,7 @@ export const MarketPoiDemographicsScreen: React.FC<MarketPoiDemographicsScreenPr
                 <div className="flex items-center justify-between p-2 rounded bg-slate-50 border border-[#DDE3EA]">
                   <span className="flex items-center gap-1.5 text-[#17212B]">
                     <Wrench className="w-3.5 h-3.5 text-red-600" />
-                    Jaringan Outlet AHASS Aktif
+                    Jaringan Outlet Dealer Aktif
                   </span>
                   <span className="font-bold tabular-nums text-red-700">{selectedReg.outlets} Bengkel Resmi</span>
                 </div>
@@ -624,7 +624,7 @@ export const MarketPoiDemographicsScreen: React.FC<MarketPoiDemographicsScreenPr
                   : activeCategory === 'demografi'
                   ? `${filteredDemographies.length} Wilayah`
                   : activeCategory === 'jaringan'
-                  ? `${filteredNetworks.length} Outlet AHASS`
+                  ? `${filteredNetworks.length} Outlet Dealer`
                   : `${filteredCampaigns.length} Kampanye Spasial`}
                 )
               </span>
@@ -678,7 +678,7 @@ export const MarketPoiDemographicsScreen: React.FC<MarketPoiDemographicsScreenPr
                   <th className="p-3">Kecamatan</th>
                   <th className="p-3 text-center">Keramaian (1-10)</th>
                   <th className="p-3">Lalu Lintas Harian</th>
-                  <th className="p-3">Bengkel AHASS Terdekat</th>
+                  <th className="p-3">Bengkel Dealer Terdekat</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-200 bg-white">
@@ -788,7 +788,7 @@ export const MarketPoiDemographicsScreen: React.FC<MarketPoiDemographicsScreenPr
               <thead className="bg-[#F5F7FA] text-slate-700 font-bold border-b border-slate-200 sticky top-0 uppercase tracking-wider text-[10px]">
                 <tr>
                   <th className="p-3">Kode</th>
-                  <th className="p-3">Nama Outlet / Bengkel AHASS</th>
+                  <th className="p-3">Nama Outlet / Bengkel Dealer</th>
                   <th className="p-3">Tipe Jaringan</th>
                   <th className="p-3">Kabupaten / Kota</th>
                   <th className="p-3 text-center">Pit Servis</th>

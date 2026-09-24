@@ -42,7 +42,7 @@ export interface DemographyRecord {
 export interface NetworkRecord {
   id: string;
   outletName: string;
-  networkType: 'Dealer 3S' | 'Bengkel Resmi AHASS (H23)' | 'Big Wing' | 'Pos Servis Satelit';
+  networkType: 'Dealer 3S' | 'Bengkel Resmi Dealer (H23)' | 'Big Wing' | 'Pos Servis Satelit';
   regency: string;
   district: string;
   address: string;
@@ -78,7 +78,7 @@ export const INITIAL_POI_DATA: PoiRecord[] = [
     longitude: 110.4229,
     crowdLevel: 9.8,
     dailyTraffic: '18.500 Kendaraan/Hari',
-    nearestAhass: 'Astra Motor Gajah Mada (0.8 km)',
+    nearestAhass: 'Dealer Gajah Mada (0.8 km)',
     notes: 'Kawasan pusat mobilitas komuter dan sentra perdagangan kota Semarang.'
   },
   {
@@ -91,7 +91,7 @@ export const INITIAL_POI_DATA: PoiRecord[] = [
     longitude: 110.4398,
     crowdLevel: 9.6,
     dailyTraffic: '32.000 Mahasiswa & Staf',
-    nearestAhass: 'AHASS Tembalang Motor (1.2 km)',
+    nearestAhass: 'Dealer Tembalang Motor (1.2 km)',
     notes: 'Konsentrasi populasi generasi muda, pengguna dominan Honda BeAT, Scoopy & Vario.'
   },
   {
@@ -104,7 +104,7 @@ export const INITIAL_POI_DATA: PoiRecord[] = [
     longitude: 110.8219,
     crowdLevel: 9.2,
     dailyTraffic: '15.000 Penumpang/Hari',
-    nearestAhass: 'AHASS Solo Balapan Prima (0.6 km)',
+    nearestAhass: 'Dealer Solo Balapan Prima (0.6 km)',
     notes: 'Pintu gerbang komuter Solo-Jogja-Semarang dengan mobilitas ojek online tinggi.'
   },
   {
@@ -117,7 +117,7 @@ export const INITIAL_POI_DATA: PoiRecord[] = [
     longitude: 110.3341,
     crowdLevel: 8.9,
     dailyTraffic: '24.000 Tenaga Kerja',
-    nearestAhass: 'AHASS Tugu Wijaya (1.4 km)',
+    nearestAhass: 'Dealer Tugu Wijaya (1.4 km)',
     notes: 'Pusat buruh dan karyawan pabrik dengan kebutuhan servis berkala akhir pekan.'
   },
   {
@@ -130,7 +130,7 @@ export const INITIAL_POI_DATA: PoiRecord[] = [
     longitude: 110.8285,
     crowdLevel: 9.1,
     dailyTraffic: '20.000 Pengunjung/Hari',
-    nearestAhass: 'AHASS Klewer Jaya (0.9 km)',
+    nearestAhass: 'Dealer Klewer Jaya (0.9 km)',
     notes: 'Sentra ekonomi UMKM tekstil dan logistik perdagangan lokal.'
   },
   {
@@ -143,7 +143,7 @@ export const INITIAL_POI_DATA: PoiRecord[] = [
     longitude: 109.2304,
     crowdLevel: 8.7,
     dailyTraffic: '14.000 Kendaraan/Hari',
-    nearestAhass: 'Astra Motor Purwokerto (0.7 km)',
+    nearestAhass: 'Dealer Purwokerto (0.7 km)',
     notes: 'Pusat pertemuan masyarakat Banyumas raya dengan pergerakan motor harian padat.'
   },
   {
@@ -156,8 +156,8 @@ export const INITIAL_POI_DATA: PoiRecord[] = [
     longitude: 109.9678,
     crowdLevel: 8.5,
     dailyTraffic: '16.000 Pekerja & Logistik',
-    nearestAhass: 'AHASS Batang Pantura Mandiri (2.1 km)',
-    notes: 'Kawasan ekonomi khusus yang berkembang pesat; peluang penambahan pos AHASS baru.'
+    nearestAhass: 'Dealer Batang Pantura Mandiri (2.1 km)',
+    notes: 'Kawasan ekonomi khusus yang berkembang pesat; peluang penambahan pos Dealer baru.'
   },
   {
     id: 'POI-008',
@@ -169,7 +169,7 @@ export const INITIAL_POI_DATA: PoiRecord[] = [
     longitude: 110.8405,
     crowdLevel: 9.0,
     dailyTraffic: '28.000 Pekerja',
-    nearestAhass: 'Astra Motor Kudus Sudirman (0.5 km)',
+    nearestAhass: 'Dealer Kudus Sudirman (0.5 km)',
     notes: 'Daya beli tinggi karyawan industri rokok dengan loyalitas brand Honda yang kuat.'
   }
 ];
@@ -321,7 +321,7 @@ export const INITIAL_DEMOGRAPHY_DATA: DemographyRecord[] = [
 export const INITIAL_NETWORK_DATA: NetworkRecord[] = [
   {
     id: 'NET-001',
-    outletName: 'Astra Motor Center Semarang',
+    outletName: 'Dealer Center Semarang',
     networkType: 'Big Wing',
     regency: 'Kota Semarang',
     district: 'Semarang Tengah',
@@ -335,7 +335,7 @@ export const INITIAL_NETWORK_DATA: NetworkRecord[] = [
   },
   {
     id: 'NET-002',
-    outletName: 'AHASS Pratama Motor Majapahit',
+    outletName: 'Dealer Pratama Motor Majapahit',
     networkType: 'Dealer 3S',
     regency: 'Kota Semarang',
     district: 'Pedurungan',
@@ -349,7 +349,7 @@ export const INITIAL_NETWORK_DATA: NetworkRecord[] = [
   },
   {
     id: 'NET-003',
-    outletName: 'Astra Motor Solo Slamet Riyadi',
+    outletName: 'Dealer Solo Slamet Riyadi',
     networkType: 'Dealer 3S',
     regency: 'Kota Surakarta',
     district: 'Laweyan',
@@ -363,8 +363,8 @@ export const INITIAL_NETWORK_DATA: NetworkRecord[] = [
   },
   {
     id: 'NET-004',
-    outletName: 'AHASS Banyumas Mandiri Purwokerto',
-    networkType: 'Bengkel Resmi AHASS (H23)',
+    outletName: 'Dealer Banyumas Mandiri Purwokerto',
+    networkType: 'Bengkel Resmi Dealer (H23)',
     regency: 'Banyumas',
     district: 'Purwokerto Selatan',
     address: 'Jl. Gerilya No. 78, Purwokerto',
@@ -377,7 +377,7 @@ export const INITIAL_NETWORK_DATA: NetworkRecord[] = [
   },
   {
     id: 'NET-005',
-    outletName: 'AHASS Tunas Baru Kudus',
+    outletName: 'Dealer Tunas Baru Kudus',
     networkType: 'Dealer 3S',
     regency: 'Kudus',
     district: 'Kudus Kota',
@@ -391,7 +391,7 @@ export const INITIAL_NETWORK_DATA: NetworkRecord[] = [
   },
   {
     id: 'NET-006',
-    outletName: 'Pos AHASS Satelit Ajibarang',
+    outletName: 'Pos Dealer Satelit Ajibarang',
     networkType: 'Pos Servis Satelit',
     regency: 'Banyumas',
     district: 'Ajibarang',
@@ -434,7 +434,7 @@ export const INITIAL_SPATIAL_CAMPAIGNS: SpatialCampaignRecord[] = [
     id: 'CMP-003',
     campaignName: 'Servis Siaga Panen Tani Banyumas & Cilacap',
     targetRegion: 'Banyumas, Cilacap, Purbalingga',
-    activityType: 'Service Kunjung AHASS ke Desa & Gratis Busi',
+    activityType: 'Service Kunjung Dealer ke Desa & Gratis Busi',
     channels: 'WhatsApp & Radio Lokal',
     targetAudience: 9500,
     expectedResponseRate: '41,2%',

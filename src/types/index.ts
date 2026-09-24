@@ -91,7 +91,7 @@ export interface HondaVehicle {
 export interface HondaTransaction {
   id: string;
   date: string;
-  type: 'Unit Sales' | 'Servis AHASS' | 'Spare Part HGP' | 'Aksesoris HGA' | 'Apparel & Helm';
+  type: 'Unit Sales' | 'Servis Dealer' | 'Spare Part HGP' | 'Aksesoris HGA' | 'Apparel & Helm';
   description: string;
   outlet: string;
   amount: string;
@@ -113,7 +113,7 @@ export interface HondaServiceRecord {
 export interface HondaInteraction {
   id: string;
   date: string;
-  channel: 'WhatsApp Motorku X' | 'Telepon Follow Up' | 'Kunjungan AHASS' | 'Aplikasi Motorku X' | 'SMS Blast';
+  channel: 'WhatsApp Motorku X' | 'Telepon Follow Up' | 'Kunjungan Dealer' | 'Aplikasi Motorku X' | 'SMS Blast';
   subject: string;
   sentiment: 'Positif' | 'Netral' | 'Negatif';
   agent: string;
@@ -133,7 +133,7 @@ export interface HondaComplaint {
   id: string;
   ticketNo: string;
   date: string;
-  category: 'Waktu Tunggu AHASS' | 'Ketersediaan Spare Part' | 'Kualitas Servis (Tarikan/Gredek)' | 'Fasilitas Ruang Tunggu' | 'Pelayanan Front Desk' | 'Dokumen STNK/Plat';
+  category: 'Waktu Tunggu Dealer' | 'Ketersediaan Spare Part' | 'Kualitas Servis (Tarikan/Gredek)' | 'Fasilitas Ruang Tunggu' | 'Pelayanan Front Desk' | 'Dokumen STNK/Plat';
   status: 'Selesai' | 'Dalam Penanganan' | 'Eskalasi Regional';
   description: string;
   resolution: string;

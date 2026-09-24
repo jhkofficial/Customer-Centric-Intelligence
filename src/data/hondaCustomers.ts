@@ -19,7 +19,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
     lastTransactionDate: '12 Agustus 2026',
     lastInteractionDate: '28 Agustus 2026',
     complaintStatus: 'Dalam Proses',
-    behavioralAlert: 'Jatuh tempo servis berkala 10.000 KM terlewat 38 hari. Riwayat keluhan waktu tunggu servis di AHASS Semarang Pandanaran (>40 menit).',
+    behavioralAlert: 'Jatuh tempo servis berkala 10.000 KM terlewat 38 hari. Riwayat keluhan waktu tunggu servis di Dealer Semarang Pandanaran (>40 menit).',
     vehicle: {
       model: 'Honda PCX 160 CBS',
       plateNumberMasked: 'H 4*** ZA',
@@ -29,45 +29,45 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       engineCapacity: '160 cc eSP+ 4-Katup',
       color: 'Magnificent Matte Brown',
       purchaseType: 'Kredit (FIFGROUP)',
-      dealerPurchase: 'Astra Motor Gajahmada Semarang',
+      dealerPurchase: 'Dealer Gajahmada Semarang',
       purchaseDate: '18 Mei 2024',
       kpbStatus: 'KPB 3 Terlewat · KPB 4 Aktif',
       warrantyStatus: 'Garansi Rangka 5 Th & Injeksi Aktif'
     },
     transactions: [
-      { id: 'TRX-001', date: '12 Ags 2026', type: 'Servis AHASS', description: 'Ganti Oli AHM SPX2 + Kampas Rem Belakang', outlet: 'AHASS 0001 Astra Motor Semarang', amount: 'Rp198.000', status: 'Selesai' },
-      { id: 'TRX-002', date: '20 Feb 2026', type: 'Spare Part HGP', description: 'Busi Honda NGK Laser + Saringan Udara Viscous', outlet: 'AHASS Gajahmada Semarang', amount: 'Rp115.000', status: 'Selesai' },
-      { id: 'TRX-003', date: '18 Mei 2024', type: 'Unit Sales', description: 'Pembelian Honda PCX 160 CBS (DP Kredit FIF)', outlet: 'Astra Motor Gajahmada', amount: 'Rp32.670.000', status: 'Kredit Aktif' }
+      { id: 'TRX-001', date: '12 Ags 2026', type: 'Servis Dealer', description: 'Ganti Oli AHM SPX2 + Kampas Rem Belakang', outlet: 'Dealer 0001 Dealer Semarang', amount: 'Rp198.000', status: 'Selesai' },
+      { id: 'TRX-002', date: '20 Feb 2026', type: 'Spare Part HGP', description: 'Busi Honda NGK Laser + Saringan Udara Viscous', outlet: 'Dealer Gajahmada Semarang', amount: 'Rp115.000', status: 'Selesai' },
+      { id: 'TRX-003', date: '18 Mei 2024', type: 'Unit Sales', description: 'Pembelian Honda PCX 160 CBS (DP Kredit FIF)', outlet: 'Dealer Gajahmada', amount: 'Rp32.670.000', status: 'Kredit Aktif' }
     ],
     serviceHistory: [
-      { id: 'SRV-001', date: '12 Ags 2026', serviceType: 'Servis Berkala & Ganti Oli', ahassName: 'AHASS 0001 Astra Motor Gajahmada', mechanicName: 'Agus Riyanto', odometerKm: 9800, cost: 'Rp198.000', notes: 'Kondisi kampas rem belakang aus tipis, diganti part HGP. Oli SPX2 diisi 0.8L.', kpbStatus: 'Reguler Berbayar' },
-      { id: 'SRV-002', date: '14 Jan 2025', serviceType: 'KPB 2 (4.000 km)', ahassName: 'AHASS 0001 Astra Motor Gajahmada', mechanicName: 'Budi Santoso', odometerKm: 3950, cost: 'Rp0', notes: 'KPB 2 selesai, servis gratis, pemeriksaan torsi baut dan tegangan aki normal.', kpbStatus: 'Gratis Jasa' },
-      { id: 'SRV-003', date: '22 Jun 2024', serviceType: 'KPB 1 (1.000 km)', ahassName: 'AHASS 0001 Astra Motor Gajahmada', mechanicName: 'Agus Riyanto', odometerKm: 980, cost: 'Rp0', notes: 'KPB 1 servis perdana, ganti oli AHM MPX2 gratis.', kpbStatus: 'Gratis Jasa & Oli' }
+      { id: 'SRV-001', date: '12 Ags 2026', serviceType: 'Servis Berkala & Ganti Oli', ahassName: 'Dealer 0001 Gajahmada', mechanicName: 'Agus Riyanto', odometerKm: 9800, cost: 'Rp198.000', notes: 'Kondisi kampas rem belakang aus tipis, diganti part HGP. Oli SPX2 diisi 0.8L.', kpbStatus: 'Reguler Berbayar' },
+      { id: 'SRV-002', date: '14 Jan 2025', serviceType: 'KPB 2 (4.000 km)', ahassName: 'Dealer 0001 Gajahmada', mechanicName: 'Budi Santoso', odometerKm: 3950, cost: 'Rp0', notes: 'KPB 2 selesai, servis gratis, pemeriksaan torsi baut dan tegangan aki normal.', kpbStatus: 'Gratis Jasa' },
+      { id: 'SRV-003', date: '22 Jun 2024', serviceType: 'KPB 1 (1.000 km)', ahassName: 'Dealer 0001 Gajahmada', mechanicName: 'Agus Riyanto', odometerKm: 980, cost: 'Rp0', notes: 'KPB 1 servis perdana, ganti oli AHM MPX2 gratis.', kpbStatus: 'Gratis Jasa & Oli' }
     ],
     interactions: [
       { id: 'INT-001', date: '28 Ags 2026', channel: 'WhatsApp Motorku X', subject: 'Notifikasi Reminder Servis 10.000 KM', sentiment: 'Netral', agent: 'Sistem Otomasi Motorku X', outcome: 'Pesan terbaca (centang biru), belum ada konfirmasi booking jadwal.' },
-      { id: 'INT-002', date: '15 Ags 2026', channel: 'Telepon Follow Up', subject: 'Customer Satisfaction Index (CSI) H+3', sentiment: 'Negatif', agent: 'Siti - Customer Care', outcome: 'Pelanggan mengeluhkan antrean AHASS padat dan waktu estimasi meleset.' }
+      { id: 'INT-002', date: '15 Ags 2026', channel: 'Telepon Follow Up', subject: 'Customer Satisfaction Index (CSI) H+3', sentiment: 'Negatif', agent: 'Siti - Customer Care', outcome: 'Pelanggan mengeluhkan antrean Dealer padat dan waktu estimasi meleset.' }
     ],
     campaigns: [
-      { id: 'CMP-001', campaignName: 'Promo Satu Hati Service Fest AHASS', channel: 'WhatsApp', sentDate: '25 Ags 2026', status: 'Dibuka & Klik', incentive: 'Diskon Jasa 20% + Voucher Part Rp25.000' },
+      { id: 'CMP-001', campaignName: 'Promo Satu Hati Service Fest Dealer', channel: 'WhatsApp', sentDate: '25 Ags 2026', status: 'Dibuka & Klik', incentive: 'Diskon Jasa 20% + Voucher Part Rp25.000' },
       { id: 'CMP-002', campaignName: 'Flash Voucher Oli AHM Motorku X', channel: 'Push Motorku X', sentDate: '10 Jul 2026', status: 'Diabaikan', incentive: 'Gratis Oli Gardan Matic' }
     ],
     complaints: [
-      { id: 'CMPL-001', ticketNo: 'TKT-SMG-260815', date: '15 Ags 2026', category: 'Waktu Tunggu AHASS', status: 'Dalam Penanganan', description: 'Waktu tunggu servis reguler melebihi 40 menit tanpa kepastian pit servis.', resolution: 'Dihubungi Kepala Bengkel untuk penjadwalan via Fast Track Pit Express.' }
+      { id: 'CMPL-001', ticketNo: 'TKT-SMG-260815', date: '15 Ags 2026', category: 'Waktu Tunggu Dealer', status: 'Dalam Penanganan', description: 'Waktu tunggu servis reguler melebihi 40 menit tanpa kepastian pit servis.', resolution: 'Dihubungi Kepala Bengkel untuk penjadwalan via Fast Track Pit Express.' }
     ],
     locationAccess: {
       addressMasked: 'Jl. Majapahit No. ***, Gayamsari',
       district: 'Semarang Timur',
       regency: 'Kota Semarang',
-      nearestAhass: 'AHASS Astra Motor Pandanaran (7,8 km)',
+      nearestAhass: 'Dealer Pandanaran (7,8 km)',
       distanceKm: 7.8,
       travelTimeMin: 22,
-      alternateAhass: 'AHASS Nusantara Motor Pedurungan (3,2 km)',
+      alternateAhass: 'Dealer Nusantara Motor Pedurungan (3,2 km)',
       alternateDistanceKm: 3.2
     },
     nextBestAction: {
       title: 'Aktivasi Booking Fast Track & Voucher Diskon CVT via WhatsApp',
-      reason: 'Pelanggan High Value PCX 160 dengan risiko churn 82% akibat komplain antrean. Tawarkan booking prioritas di AHASS Pedurungan (3,2 km) dengan voucher jasa 25%.',
+      reason: 'Pelanggan High Value PCX 160 dengan risiko churn 82% akibat komplain antrean. Tawarkan booking prioritas di Dealer Pedurungan (3,2 km) dengan voucher jasa 25%.',
       recommendedChannel: 'WhatsApp',
       recommendedTiming: 'Kamis, 10.00–12.00 WIB',
       approvalStatus: 'Perlu persetujuan',
@@ -108,13 +108,13 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       warrantyStatus: 'Garansi Rangka 5 Th Aktif'
     },
     transactions: [
-      { id: 'TRX-004', date: '05 Sep 2026', type: 'Servis AHASS', description: 'Paket Servis Lengkap + Ganti V-Belt & Roller CVT', outlet: 'AHASS Surya Inti Banjarsari Solo', amount: 'Rp435.000', status: 'Selesai' },
+      { id: 'TRX-004', date: '05 Sep 2026', type: 'Servis Dealer', description: 'Paket Servis Lengkap + Ganti V-Belt & Roller CVT', outlet: 'Dealer Surya Inti Banjarsari Solo', amount: 'Rp435.000', status: 'Selesai' },
       { id: 'TRX-005', date: '12 Mei 2026', type: 'Aksesoris HGA', description: 'Garnish Radiator & Hand Guard Resmi Honda', outlet: 'Surya Inti Solo', amount: 'Rp380.000', status: 'Selesai' },
       { id: 'TRX-006', date: '10 Feb 2023', type: 'Unit Sales', description: 'Pembelian Honda ADV 160 ABS Cash', outlet: 'Surya Inti Solo', amount: 'Rp39.250.000', status: 'Lunas' }
     ],
     serviceHistory: [
-      { id: 'SRV-004', date: '05 Sep 2026', serviceType: 'Servis CVT & Drive Train', ahassName: 'AHASS Surya Inti Solo', mechanicName: 'Dwi Cahyono', odometerKm: 24500, cost: 'Rp435.000', notes: 'Ganti V-Belt kit HGP + roller set, pembersihan ruang transmisi CVT halus.', kpbStatus: 'Reguler Berbayar' },
-      { id: 'SRV-005', date: '18 Apr 2026', serviceType: 'Servis Berkala & Tune Up', ahassName: 'AHASS Surya Inti Solo', mechanicName: 'Dwi Cahyono', odometerKm: 20100, cost: 'Rp210.000', notes: 'Ganti oli AHM SPX2, cek busi, reset ECM dan setel jarak renggang gas.', kpbStatus: 'Reguler Berbayar' }
+      { id: 'SRV-004', date: '05 Sep 2026', serviceType: 'Servis CVT & Drive Train', ahassName: 'Dealer Surya Inti Solo', mechanicName: 'Dwi Cahyono', odometerKm: 24500, cost: 'Rp435.000', notes: 'Ganti V-Belt kit HGP + roller set, pembersihan ruang transmisi CVT halus.', kpbStatus: 'Reguler Berbayar' },
+      { id: 'SRV-005', date: '18 Apr 2026', serviceType: 'Servis Berkala & Tune Up', ahassName: 'Dealer Surya Inti Solo', mechanicName: 'Dwi Cahyono', odometerKm: 20100, cost: 'Rp210.000', notes: 'Ganti oli AHM SPX2, cek busi, reset ECM dan setel jarak renggang gas.', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
       { id: 'INT-003', date: '06 Sep 2026', channel: 'WhatsApp Motorku X', subject: 'Konfirmasi Poin Motorku X', sentiment: 'Positif', agent: 'Motorku X Bot', outcome: 'Pelanggan menukarkan 150 poin Hepigo untuk voucher oli berikutnya.' }
@@ -127,10 +127,10 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       addressMasked: 'Jl. Monginsidi No. ***, Gilingan',
       district: 'Banjarsari',
       regency: 'Kota Surakarta',
-      nearestAhass: 'AHASS Surya Inti Banjarsari (2,1 km)',
+      nearestAhass: 'Dealer Surya Inti Banjarsari (2,1 km)',
       distanceKm: 2.1,
       travelTimeMin: 7,
-      alternateAhass: 'AHASS Pratama Solo Baru (5,4 km)',
+      alternateAhass: 'Dealer Pratama Solo Baru (5,4 km)',
       alternateDistanceKm: 5.4
     },
     nextBestAction: {
@@ -176,11 +176,11 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       warrantyStatus: 'Masa Garansi Reguler'
     },
     transactions: [
-      { id: 'TRX-007', date: '18 Jul 2026', type: 'Servis AHASS', description: 'Ganti Oli AHM MPX2 + Filter Udara', outlet: 'AHASS Nusantara Motor Purwokerto', amount: 'Rp118.000', status: 'Selesai' },
+      { id: 'TRX-007', date: '18 Jul 2026', type: 'Servis Dealer', description: 'Ganti Oli AHM MPX2 + Filter Udara', outlet: 'Dealer Nusantara Motor Purwokerto', amount: 'Rp118.000', status: 'Selesai' },
       { id: 'TRX-008', date: '15 Jul 2021', type: 'Unit Sales', description: 'Pembelian Honda BeAT CBS ISS', outlet: 'Nusantara Motor Purwokerto', amount: 'Rp17.800.000', status: 'Lunas' }
     ],
     serviceHistory: [
-      { id: 'SRV-006', date: '18 Jul 2026', serviceType: 'Ganti Oli & Cek Kelistrikan', ahassName: 'AHASS Nusantara Motor', mechanicName: 'Tri Haryanto', odometerKm: 32000, cost: 'Rp118.000', notes: 'Servis ringan, kondisi ban depan mulai tipis disarankan ganti sebelum musim hujan.', kpbStatus: 'Reguler Berbayar' }
+      { id: 'SRV-006', date: '18 Jul 2026', serviceType: 'Ganti Oli & Cek Kelistrikan', ahassName: 'Dealer Nusantara Motor', mechanicName: 'Tri Haryanto', odometerKm: 32000, cost: 'Rp118.000', notes: 'Servis ringan, kondisi ban depan mulai tipis disarankan ganti sebelum musim hujan.', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
       { id: 'INT-004', date: '20 Jul 2026', channel: 'WhatsApp Motorku X', subject: 'Kuesioner Minat Kendaraan Baru', sentiment: 'Positif', agent: 'Sales Advisor Rina', outcome: 'Pelanggan menanyakan simulasi tukar tambah ke Honda Stylo 160.' }
@@ -193,10 +193,10 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       addressMasked: 'Jl. Jenderal Soedirman No. ***',
       district: 'Purwokerto Timur',
       regency: 'Banyumas',
-      nearestAhass: 'AHASS Nusantara Motor Purwokerto (3,4 km)',
+      nearestAhass: 'Dealer Nusantara Motor Purwokerto (3,4 km)',
       distanceKm: 3.4,
       travelTimeMin: 10,
-      alternateAhass: 'AHASS Astra Motor Purwokerto (4,1 km)',
+      alternateAhass: 'Dealer Purwokerto (4,1 km)',
       alternateDistanceKm: 4.1
     },
     nextBestAction: {
@@ -242,17 +242,17 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       warrantyStatus: 'Garansi Rangka 5 Th Aktif'
     },
     transactions: [
-      { id: 'TRX-009', date: '02 Jun 2026', type: 'Servis AHASS', description: 'Ganti Oli SPX2 + Kampas Rem Depan Cakram', outlet: 'AHASS Prima Motor Kudus', amount: 'Rp175.000', status: 'Selesai' },
+      { id: 'TRX-009', date: '02 Jun 2026', type: 'Servis Dealer', description: 'Ganti Oli SPX2 + Kampas Rem Depan Cakram', outlet: 'Dealer Prima Motor Kudus', amount: 'Rp175.000', status: 'Selesai' },
       { id: 'TRX-010', date: '10 Jan 2024', type: 'Unit Sales', description: 'Pembelian Honda Vario 160 ABS', outlet: 'Prima Motor Kudus', amount: 'Rp29.800.000', status: 'Lunas' }
     ],
     serviceHistory: [
-      { id: 'SRV-007', date: '02 Jun 2026', serviceType: 'Servis Berkala 12.000 km', ahassName: 'AHASS Prima Motor Kudus', mechanicName: 'Yanto', odometerKm: 12100, cost: 'Rp175.000', notes: 'Ganti oli mesin SPX2, periksa celah busi dan busa filter udara.', kpbStatus: 'Reguler Berbayar' }
+      { id: 'SRV-007', date: '02 Jun 2026', serviceType: 'Servis Berkala 12.000 km', ahassName: 'Dealer Prima Motor Kudus', mechanicName: 'Yanto', odometerKm: 12100, cost: 'Rp175.000', notes: 'Ganti oli mesin SPX2, periksa celah busi dan busa filter udara.', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
       { id: 'INT-005', date: '15 Jul 2026', channel: 'SMS Blast', subject: 'Reminder Servis Berkala', sentiment: 'Netral', agent: 'Sistem', outcome: 'Terkirim tanpa respon balik.' }
     ],
     campaigns: [
-      { id: 'CMP-005', campaignName: 'Service Winback AHASS Kudus', channel: 'WhatsApp', sentDate: '10 Ags 2026', status: 'Terkirim', incentive: 'Voucher Diskon Servis CVT 30%' }
+      { id: 'CMP-005', campaignName: 'Service Winback Dealer Kudus', channel: 'WhatsApp', sentDate: '10 Ags 2026', status: 'Terkirim', incentive: 'Voucher Diskon Servis CVT 30%' }
     ],
     complaints: [
       { id: 'CMPL-002', ticketNo: 'TKT-KDS-260512', date: '12 Mei 2026', category: 'Kualitas Servis (Tarikan/Gredek)', status: 'Selesai', description: 'Pelanggan mengeluhkan tarikan awal sedikit bergetar pada CVT.', resolution: 'Pembersihan mangkok ganda CVT dan penggantian gemuk CVT gratis garansi pengerjaan.' }
@@ -261,10 +261,10 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       addressMasked: 'Jl. AKBP Agil Kusumadya No. ***',
       district: 'Jati',
       regency: 'Kudus',
-      nearestAhass: 'AHASS Prima Motor Kudus (5,6 km)',
+      nearestAhass: 'Dealer Prima Motor Kudus (5,6 km)',
       distanceKm: 5.6,
       travelTimeMin: 15,
-      alternateAhass: 'AHASS Sukun Motor Kudus (6,8 km)',
+      alternateAhass: 'Dealer Sukun Motor Kudus (6,8 km)',
       alternateDistanceKm: 6.8
     },
     nextBestAction: {
@@ -310,11 +310,11 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       warrantyStatus: 'Garansi Rangka 5 Th Aktif'
     },
     transactions: [
-      { id: 'TRX-011', date: '14 Sep 2026', type: 'Servis AHASS', description: 'Servis KPB 2 + Ganti Oli AHM MPX2', outlet: 'AHASS Timbul Jaya Mertoyudan', amount: 'Rp0', status: 'Selesai' },
+      { id: 'TRX-011', date: '14 Sep 2026', type: 'Servis Dealer', description: 'Servis KPB 2 + Ganti Oli AHM MPX2', outlet: 'Dealer Timbul Jaya Mertoyudan', amount: 'Rp0', status: 'Selesai' },
       { id: 'TRX-012', date: '20 Mar 2026', type: 'Unit Sales', description: 'Pembelian Honda Stylo 160 CBS', outlet: 'Timbul Jaya Motor Magelang', amount: 'Rp28.250.000', status: 'Kredit Aktif' }
     ],
     serviceHistory: [
-      { id: 'SRV-008', date: '14 Sep 2026', serviceType: 'KPB 2 (4.000 km)', ahassName: 'AHASS Timbul Jaya Mertoyudan', mechanicName: 'Wawan S.', odometerKm: 4180, cost: 'Rp0', notes: 'Servis KPB 2, cek kelistrikan smart key, tekanan ban, oli MPX2 diganti.', kpbStatus: 'Gratis Jasa' }
+      { id: 'SRV-008', date: '14 Sep 2026', serviceType: 'KPB 2 (4.000 km)', ahassName: 'Dealer Timbul Jaya Mertoyudan', mechanicName: 'Wawan S.', odometerKm: 4180, cost: 'Rp0', notes: 'Servis KPB 2, cek kelistrikan smart key, tekanan ban, oli MPX2 diganti.', kpbStatus: 'Gratis Jasa' }
     ],
     interactions: [
       { id: 'INT-006', date: '14 Sep 2026', channel: 'Aplikasi Motorku X', subject: 'Rating Bintang 5 Servis KPB 2', sentiment: 'Positif', agent: 'Sistem', outcome: 'Ulasan sangat puas dengan ruang tunggu ber-AC dan minuman gratis.' }
@@ -327,10 +327,10 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       addressMasked: 'Jl. Magelang-Yogya Km. ***',
       district: 'Mertoyudan',
       regency: 'Magelang',
-      nearestAhass: 'AHASS Timbul Jaya Mertoyudan (1,8 km)',
+      nearestAhass: 'Dealer Timbul Jaya Mertoyudan (1,8 km)',
       distanceKm: 1.8,
       travelTimeMin: 6,
-      alternateAhass: 'AHASS Armada Tunas Magelang (3,2 km)',
+      alternateAhass: 'Dealer Armada Tunas Magelang (3,2 km)',
       alternateDistanceKm: 3.2
     },
     nextBestAction: {
@@ -360,7 +360,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
     lastTransactionDate: '10 Juli 2026',
     lastInteractionDate: '15 Agustus 2026',
     complaintStatus: 'Dalam Proses',
-    behavioralAlert: 'Keluhan ketersediaan kampas kopling ganda inden selama 9 hari di AHASS Tegal Barat.',
+    behavioralAlert: 'Keluhan ketersediaan kampas kopling ganda inden selama 9 hari di Dealer Tegal Barat.',
     vehicle: {
       model: 'Honda Vario 125 CBS',
       plateNumberMasked: 'G 2*** DF',
@@ -376,29 +376,29 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       warrantyStatus: 'Garansi Rangka 5 Th Aktif'
     },
     transactions: [
-      { id: 'TRX-013', date: '10 Jul 2026', type: 'Servis AHASS', description: 'Ganti Oli AHM MPX2 + Servis CVT', outlet: 'AHASS Palma Motor Tegal', amount: 'Rp145.000', status: 'Selesai' },
+      { id: 'TRX-013', date: '10 Jul 2026', type: 'Servis Dealer', description: 'Ganti Oli AHM MPX2 + Servis CVT', outlet: 'Dealer Palma Motor Tegal', amount: 'Rp145.000', status: 'Selesai' },
       { id: 'TRX-014', date: '12 Jan 2024', type: 'Unit Sales', description: 'Pembelian Honda Vario 125 CBS', outlet: 'Palma Motor Tegal', amount: 'Rp23.400.000', status: 'Kredit Aktif' }
     ],
     serviceHistory: [
-      { id: 'SRV-009', date: '10 Jul 2026', serviceType: 'Servis Berkala & CVT', ahassName: 'AHASS Palma Motor Tegal', mechanicName: 'Iwan', odometerKm: 15400, cost: 'Rp145.000', notes: 'Pembersihan ruang CVT, disarankan ganti kampas ganda karena sudah mulai aus.', kpbStatus: 'Reguler Berbayar' }
+      { id: 'SRV-009', date: '10 Jul 2026', serviceType: 'Servis Berkala & CVT', ahassName: 'Dealer Palma Motor Tegal', mechanicName: 'Iwan', odometerKm: 15400, cost: 'Rp145.000', notes: 'Pembersihan ruang CVT, disarankan ganti kampas ganda karena sudah mulai aus.', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
       { id: 'INT-007', date: '15 Ags 2026', channel: 'WhatsApp Motorku X', subject: 'Eskalasi Inden Spare Part', sentiment: 'Negatif', agent: 'Part Officer Tegal', outcome: 'Pelanggan mempertanyakan kejelasan stok part kampas ganda.' }
     ],
     campaigns: [
-      { id: 'CMP-007', campaignName: 'Promo Merdeka AHASS Tegal', channel: 'WhatsApp', sentDate: '17 Ags 2026', status: 'Diabaikan', incentive: 'Diskon Jasa 17%' }
+      { id: 'CMP-007', campaignName: 'Promo Merdeka Dealer Tegal', channel: 'WhatsApp', sentDate: '17 Ags 2026', status: 'Diabaikan', incentive: 'Diskon Jasa 17%' }
     ],
     complaints: [
-      { id: 'CMPL-003', ticketNo: 'TKT-TGL-260815', date: '15 Ags 2026', category: 'Ketersediaan Spare Part', status: 'Dalam Penanganan', description: 'Inden kampas ganda kopling Vario 125 melebihi SLA 5 hari kerja.', resolution: 'Pengiriman darurat part dialokasikan dari Gudang Spare Part Semarang (Astra Motor Jateng).' }
+      { id: 'CMPL-003', ticketNo: 'TKT-TGL-260815', date: '15 Ags 2026', category: 'Ketersediaan Spare Part', status: 'Dalam Penanganan', description: 'Inden kampas ganda kopling Vario 125 melebihi SLA 5 hari kerja.', resolution: 'Pengiriman darurat part dialokasikan dari Gudang Spare Part Semarang (Dealer Jateng).' }
     ],
     locationAccess: {
       addressMasked: 'Jl. Kolonel Sugiono No. ***',
       district: 'Tegal Barat',
       regency: 'Kota Tegal',
-      nearestAhass: 'AHASS Palma Motor Tegal (6,2 km)',
+      nearestAhass: 'Dealer Palma Motor Tegal (6,2 km)',
       distanceKm: 6.2,
       travelTimeMin: 18,
-      alternateAhass: 'AHASS Bahari Slawi (7,5 km)',
+      alternateAhass: 'Dealer Bahari Slawi (7,5 km)',
       alternateDistanceKm: 7.5
     },
     nextBestAction: {
@@ -444,14 +444,14 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       warrantyStatus: 'Garansi Reguler'
     },
     transactions: [
-      { id: 'TRX-015', date: '01 Sep 2026', type: 'Servis AHASS', description: 'Paket Servis Armada (Tune Up + Ganti Rantai Roda HGP + Oli MPX1)', outlet: 'AHASS Cendana Wangi Kedungwuni', amount: 'Rp345.000', status: 'Selesai' },
-      { id: 'TRX-016', date: '04 Agu 2026', type: 'Spare Part HGP', description: 'Ban Luar Belakang Tubetype AHM Federal', outlet: 'AHASS Kedungwuni', amount: 'Rp215.000', status: 'Selesai' }
+      { id: 'TRX-015', date: '01 Sep 2026', type: 'Servis Dealer', description: 'Paket Servis Armada (Tune Up + Ganti Rantai Roda HGP + Oli MPX1)', outlet: 'Dealer Cendana Wangi Kedungwuni', amount: 'Rp345.000', status: 'Selesai' },
+      { id: 'TRX-016', date: '04 Agu 2026', type: 'Spare Part HGP', description: 'Ban Luar Belakang Tubetype AHM Federal', outlet: 'Dealer Kedungwuni', amount: 'Rp215.000', status: 'Selesai' }
     ],
     serviceHistory: [
-      { id: 'SRV-010', date: '01 Sep 2026', serviceType: 'Tune Up & Drive Chain', ahassName: 'AHASS Cendana Kedungwuni', mechanicName: 'Ahmad S.', odometerKm: 48100, cost: 'Rp345.000', notes: 'Ganti rantai set (drive chain kit HGP) dan oli mesin MPX1, kompresi mesin prima.', kpbStatus: 'Reguler Berbayar' }
+      { id: 'SRV-010', date: '01 Sep 2026', serviceType: 'Tune Up & Drive Chain', ahassName: 'Dealer Cendana Kedungwuni', mechanicName: 'Ahmad S.', odometerKm: 48100, cost: 'Rp345.000', notes: 'Ganti rantai set (drive chain kit HGP) dan oli mesin MPX1, kompresi mesin prima.', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
-      { id: 'INT-008', date: '01 Sep 2026', channel: 'WhatsApp Motorku X', subject: 'Invoice Servis Elektronik', sentiment: 'Positif', agent: 'Sistem', outcome: 'Invoice PDF diterima dan dibayar melalui QRIS AstraPay.' }
+      { id: 'INT-008', date: '01 Sep 2026', channel: 'WhatsApp Motorku X', subject: 'Invoice Servis Elektronik', sentiment: 'Positif', agent: 'Sistem', outcome: 'Invoice PDF diterima dan dibayar melalui QRIS DealerPay.' }
     ],
     campaigns: [
       { id: 'CMP-008', campaignName: 'Program Servis Fleet / Korporat UMKM Pekalongan', channel: 'WhatsApp', sentDate: '15 Agu 2026', status: 'Dikonversi', incentive: 'Potongan Jasa 25% untuk Minimal 2 Unit' }
@@ -461,10 +461,10 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       addressMasked: 'Jl. Raya Capgawen No. ***',
       district: 'Kedungwuni',
       regency: 'Pekalongan',
-      nearestAhass: 'AHASS Cendana Kedungwuni (2,8 km)',
+      nearestAhass: 'Dealer Cendana Kedungwuni (2,8 km)',
       distanceKm: 2.8,
       travelTimeMin: 8,
-      alternateAhass: 'AHASS Pekalongan Kota (6,0 km)',
+      alternateAhass: 'Dealer Pekalongan Kota (6,0 km)',
       alternateDistanceKm: 6.0
     },
     nextBestAction: {
@@ -494,7 +494,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
     lastTransactionDate: '20 Mei 2026',
     lastInteractionDate: '12 Juli 2026',
     complaintStatus: 'Tidak Ada',
-    behavioralAlert: 'Celah jarak tempuh ke AHASS terdekat mencapai 8,4 km (kawasan industri Cilacap). Pelanggan berisiko beralih ke bengkel umum.',
+    behavioralAlert: 'Celah jarak tempuh ke Dealer terdekat mencapai 8,4 km (kawasan industri Cilacap). Pelanggan berisiko beralih ke bengkel umum.',
     vehicle: {
       model: 'Honda CB150R Streetfire Special Edition',
       plateNumberMasked: 'R 6*** EP',
@@ -510,11 +510,11 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       warrantyStatus: 'Garansi Rangka 5 Th Aktif'
     },
     transactions: [
-      { id: 'TRX-017', date: '20 Mei 2026', type: 'Servis AHASS', description: 'Ganti Oli AHM SPX1 + Tune Up DOHC', outlet: 'AHASS Kompo Motor Cilacap', amount: 'Rp220.000', status: 'Selesai' },
+      { id: 'TRX-017', date: '20 Mei 2026', type: 'Servis Dealer', description: 'Ganti Oli AHM SPX1 + Tune Up DOHC', outlet: 'Dealer Kompo Motor Cilacap', amount: 'Rp220.000', status: 'Selesai' },
       { id: 'TRX-018', date: '14 Jun 2024', type: 'Unit Sales', description: 'Pembelian Honda CB150R Streetfire SE Cash', outlet: 'Kompo Motor Cilacap', amount: 'Rp31.500.000', status: 'Lunas' }
     ],
     serviceHistory: [
-      { id: 'SRV-011', date: '20 Mei 2026', serviceType: 'Servis Berkala & Ganti Oli', ahassName: 'AHASS Kompo Cilacap', mechanicName: 'Rahmat H.', odometerKm: 12100, cost: 'Rp220.000', notes: 'Ganti oli SPX1 1.2L, cek celah klep DOHC dan setel kopling manual.', kpbStatus: 'Reguler Berbayar' }
+      { id: 'SRV-011', date: '20 Mei 2026', serviceType: 'Servis Berkala & Ganti Oli', ahassName: 'Dealer Kompo Cilacap', mechanicName: 'Rahmat H.', odometerKm: 12100, cost: 'Rp220.000', notes: 'Ganti oli SPX1 1.2L, cek celah klep DOHC dan setel kopling manual.', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
       { id: 'INT-009', date: '12 Jul 2026', channel: 'WhatsApp Motorku X', subject: 'Pengingat Ganti Oli SPX1', sentiment: 'Netral', agent: 'Sistem', outcome: 'Belum ada konfirmasi booking dari pelanggan.' }
@@ -527,14 +527,14 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       addressMasked: 'Jl. MT Haryono No. ***, Donan',
       district: 'Cilacap Tengah',
       regency: 'Cilacap',
-      nearestAhass: 'AHASS Kompo Cilacap (8,4 km)',
+      nearestAhass: 'Dealer Kompo Cilacap (8,4 km)',
       distanceKm: 8.4,
       travelTimeMin: 24,
-      alternateAhass: 'AHASS Kroya Raya (18,0 km)',
+      alternateAhass: 'Dealer Kroya Raya (18,0 km)',
       alternateDistanceKm: 18.0
     },
     nextBestAction: {
-      title: 'Tawarkan Layanan Service Kunjung AHASS ke Kawasan Industri Cilacap',
+      title: 'Tawarkan Layanan Service Kunjung Dealer ke Kawasan Industri Cilacap',
       reason: 'Fasilitasi jarak tempuh 8,4 km dengan layanan service kunjung korporat/perumahan industri pada jam istirahat.',
       recommendedChannel: 'WhatsApp',
       recommendedTiming: 'Rabu, 11.30 WIB',
@@ -570,33 +570,33 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       engineCapacity: '110 cc eSP Smart Key',
       color: 'Prestige Green',
       purchaseType: 'Kredit (FIFGROUP)',
-      dealerPurchase: 'Astra Motor Mranggen Demak',
+      dealerPurchase: 'Dealer Mranggen Demak',
       purchaseDate: '05 September 2024',
       kpbStatus: 'KPB Selesai',
       warrantyStatus: 'Garansi Rangka 5 Th Aktif'
     },
     transactions: [
-      { id: 'TRX-019', date: '02 Sep 2026', type: 'Servis AHASS', description: 'Ganti Oli MPX2 + Oli Gardan + Busi', outlet: 'AHASS Astra Motor Mranggen', amount: 'Rp135.000', status: 'Selesai' },
-      { id: 'TRX-020', date: '05 Sep 2024', type: 'Unit Sales', description: 'Pembelian Honda Scoopy Prestige', outlet: 'Astra Motor Mranggen', amount: 'Rp22.850.000', status: 'Kredit Aktif' }
+      { id: 'TRX-019', date: '02 Sep 2026', type: 'Servis Dealer', description: 'Ganti Oli MPX2 + Oli Gardan + Busi', outlet: 'Dealer Mranggen', amount: 'Rp135.000', status: 'Selesai' },
+      { id: 'TRX-020', date: '05 Sep 2024', type: 'Unit Sales', description: 'Pembelian Honda Scoopy Prestige', outlet: 'Dealer Mranggen', amount: 'Rp22.850.000', status: 'Kredit Aktif' }
     ],
     serviceHistory: [
-      { id: 'SRV-012', date: '02 Sep 2026', serviceType: 'Servis Berkala & Ganti Oli', ahassName: 'AHASS Astra Mranggen', mechanicName: 'Joko S.', odometerKm: 25800, cost: 'Rp135.000', notes: 'Ganti oli MPX2, periksa ketebalan v-belt masih dalam toleransi aman (18,2 mm).', kpbStatus: 'Reguler Berbayar' }
+      { id: 'SRV-012', date: '02 Sep 2026', serviceType: 'Servis Berkala & Ganti Oli', ahassName: 'Dealer Mranggen', mechanicName: 'Joko S.', odometerKm: 25800, cost: 'Rp135.000', notes: 'Ganti oli MPX2, periksa ketebalan v-belt masih dalam toleransi aman (18,2 mm).', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
       { id: 'INT-010', date: '03 Sep 2026', channel: 'WhatsApp Motorku X', subject: 'Survei Kepuasan Servis', sentiment: 'Positif', agent: 'Sistem', outcome: 'Memberikan skor 10/10 dan memuji keramahan service advisor.' }
     ],
     campaigns: [
-      { id: 'CMP-010', campaignName: 'Promo Komuter Tangguh AHASS Demak', channel: 'WhatsApp', sentDate: '20 Agu 2026', status: 'Dikonversi', incentive: 'Gratis Pembersihan Injektor' }
+      { id: 'CMP-010', campaignName: 'Promo Komuter Tangguh Dealer Demak', channel: 'WhatsApp', sentDate: '20 Agu 2026', status: 'Dikonversi', incentive: 'Gratis Pembersihan Injektor' }
     ],
     complaints: [],
     locationAccess: {
       addressMasked: 'Jl. Raya Bandungrejo No. ***',
       district: 'Mranggen',
       regency: 'Demak',
-      nearestAhass: 'AHASS Astra Motor Mranggen (1,5 km)',
+      nearestAhass: 'Dealer Mranggen (1,5 km)',
       distanceKm: 1.5,
       travelTimeMin: 5,
-      alternateAhass: 'AHASS Majapahit Semarang (4,2 km)',
+      alternateAhass: 'Dealer Majapahit Semarang (4,2 km)',
       alternateDistanceKm: 4.2
     },
     nextBestAction: {
@@ -642,14 +642,14 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       warrantyStatus: 'Garansi Baterai 3 Th & Rangka 5 Th Aktif'
     },
     transactions: [
-      { id: 'TRX-021', date: '10 Ags 2026', type: 'Servis AHASS', description: 'Inspeksi Berkala EV + Cek Kesehatan Baterai (SOH 99%)', outlet: 'AHASS EV Center Jepara', amount: 'Rp0', status: 'Selesai' },
+      { id: 'TRX-021', date: '10 Ags 2026', type: 'Servis Dealer', description: 'Inspeksi Berkala EV + Cek Kesehatan Baterai (SOH 99%)', outlet: 'Dealer EV Center Jepara', amount: 'Rp0', status: 'Selesai' },
       { id: 'TRX-022', date: '15 Jan 2026', type: 'Unit Sales', description: 'Pembelian Honda EM1 e: PLUS + Honda Power Pack Charger e:', outlet: 'Jepara Motor EV Center', amount: 'Rp39.500.000', status: 'Lunas' }
     ],
     serviceHistory: [
-      { id: 'SRV-013', date: '10 Ags 2026', serviceType: 'Inspeksi Berkala EV', ahassName: 'AHASS EV Center Jepara', mechanicName: 'Bambang E.', odometerKm: 3750, cost: 'Rp0', notes: 'Inspeksi motor drive, konektor baterai Honda MPP e: bersih, kalibrasi ECU EV.', kpbStatus: 'Gratis Jasa' }
+      { id: 'SRV-013', date: '10 Ags 2026', serviceType: 'Inspeksi Berkala EV', ahassName: 'Dealer EV Center Jepara', mechanicName: 'Bambang E.', odometerKm: 3750, cost: 'Rp0', notes: 'Inspeksi motor drive, konektor baterai Honda MPP e: bersih, kalibrasi ECU EV.', kpbStatus: 'Gratis Jasa' }
     ],
     interactions: [
-      { id: 'INT-011', date: '11 Ags 2026', channel: 'WhatsApp Motorku X', subject: 'Edukasi Titik B swap Jateng', sentiment: 'Positif', agent: 'EV Specialist', outcome: 'Pelanggan menerima peta titik B-Swap Astra Motor di Kudus dan Semarang.' }
+      { id: 'INT-011', date: '11 Ags 2026', channel: 'WhatsApp Motorku X', subject: 'Edukasi Titik B swap Jateng', sentiment: 'Positif', agent: 'EV Specialist', outcome: 'Pelanggan menerima peta titik B-Swap Dealer di Kudus dan Semarang.' }
     ],
     campaigns: [
       { id: 'CMP-011', campaignName: 'Program Komunitas Motor Listrik Honda Jateng', channel: 'WhatsApp', sentDate: '01 Agu 2026', status: 'Dikonversi', incentive: 'Gratis Aksesoris Rear Carrier Resmi' }
@@ -659,10 +659,10 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       addressMasked: 'Jl. Raya Soekarno-Hatta No. ***',
       district: 'Tahunan',
       regency: 'Jepara',
-      nearestAhass: 'AHASS EV Center Jepara (3,1 km)',
+      nearestAhass: 'Dealer EV Center Jepara (3,1 km)',
       distanceKm: 3.1,
       travelTimeMin: 9,
-      alternateAhass: 'AHASS Kartini Jepara (4,5 km)',
+      alternateAhass: 'Dealer Kartini Jepara (4,5 km)',
       alternateDistanceKm: 4.5
     },
     nextBestAction: {
@@ -702,32 +702,32 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       engineCapacity: '160 cc eSP+ ABS HSTC',
       color: 'Imperial Matte Blue',
       purchaseType: 'Cash',
-      dealerPurchase: 'Astra Motor Solo Baru',
+      dealerPurchase: 'Dealer Solo Baru',
       purchaseDate: '12 November 2024',
       kpbStatus: 'KPB Selesai',
       warrantyStatus: 'Garansi Rangka 5 Th Aktif'
     },
     transactions: [
-      { id: 'TRX-023', date: '04 Sep 2026', type: 'Servis AHASS', description: 'Ganti Oli AHM SPX2 + Flush Radiator Coolant', outlet: 'AHASS Kartasura Motor', amount: 'Rp195.000', status: 'Selesai' }
+      { id: 'TRX-023', date: '04 Sep 2026', type: 'Servis Dealer', description: 'Ganti Oli AHM SPX2 + Flush Radiator Coolant', outlet: 'Dealer Kartasura Motor', amount: 'Rp195.000', status: 'Selesai' }
     ],
     serviceHistory: [
-      { id: 'SRV-014', date: '04 Sep 2026', serviceType: 'Servis Berkala & Pendingin', ahassName: 'AHASS Kartasura', mechanicName: 'Danang', odometerKm: 17000, cost: 'Rp195.000', notes: 'Ganti oli SPX2 dan kuras cairan coolant radiator AHM.', kpbStatus: 'Reguler Berbayar' }
+      { id: 'SRV-014', date: '04 Sep 2026', serviceType: 'Servis Berkala & Pendingin', ahassName: 'Dealer Kartasura', mechanicName: 'Danang', odometerKm: 17000, cost: 'Rp195.000', notes: 'Ganti oli SPX2 dan kuras cairan coolant radiator AHM.', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
       { id: 'INT-012', date: '04 Sep 2026', channel: 'WhatsApp Motorku X', subject: 'Konfirmasi Booking Berhasil', sentiment: 'Positif', agent: 'Sistem', outcome: 'Servis selesai tepat waktu dalam 35 menit.' }
     ],
     campaigns: [
-      { id: 'CMP-012', campaignName: 'Service Reward Point Motorku X', channel: 'Push Motorku X', sentDate: '01 Sep 2026', status: 'Dikonversi', incentive: 'Cashback AstraPay Rp25.000' }
+      { id: 'CMP-012', campaignName: 'Service Reward Point Motorku X', channel: 'Push Motorku X', sentDate: '01 Sep 2026', status: 'Dikonversi', incentive: 'Cashback DealerPay Rp25.000' }
     ],
     complaints: [],
     locationAccess: {
       addressMasked: 'Jl. Ahmad Yani No. ***',
       district: 'Kartasura',
       regency: 'Sukoharjo',
-      nearestAhass: 'AHASS Kartasura Motor (1,2 km)',
+      nearestAhass: 'Dealer Kartasura Motor (1,2 km)',
       distanceKm: 1.2,
       travelTimeMin: 4,
-      alternateAhass: 'AHASS Solo Baru (6,1 km)',
+      alternateAhass: 'Dealer Solo Baru (6,1 km)',
       alternateDistanceKm: 6.1
     },
     nextBestAction: {
@@ -772,10 +772,10 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       warrantyStatus: 'Masa Garansi Reguler'
     },
     transactions: [
-      { id: 'TRX-024', date: '24 Jul 2026', type: 'Servis AHASS', description: 'Ganti Ban Belakang Tubeless AHM + Ganti Oli MPX2', outlet: 'AHASS Naga Mas Klaten', amount: 'Rp340.000', status: 'Selesai' }
+      { id: 'TRX-024', date: '24 Jul 2026', type: 'Servis Dealer', description: 'Ganti Ban Belakang Tubeless AHM + Ganti Oli MPX2', outlet: 'Dealer Naga Mas Klaten', amount: 'Rp340.000', status: 'Selesai' }
     ],
     serviceHistory: [
-      { id: 'SRV-015', date: '24 Jul 2026', serviceType: 'Ganti Ban & Tune Up', ahassName: 'AHASS Naga Mas Klaten', mechanicName: 'Gunawan', odometerKm: 34000, cost: 'Rp340.000', notes: 'Ban belakang botak diganti part Federal Tire HGP.', kpbStatus: 'Reguler Berbayar' }
+      { id: 'SRV-015', date: '24 Jul 2026', serviceType: 'Ganti Ban & Tune Up', ahassName: 'Dealer Naga Mas Klaten', mechanicName: 'Gunawan', odometerKm: 34000, cost: 'Rp340.000', notes: 'Ban belakang botak diganti part Federal Tire HGP.', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
       { id: 'INT-013', date: '25 Jul 2026', channel: 'WhatsApp Motorku X', subject: 'Simulasi Trade-In Vario 160', sentiment: 'Positif', agent: 'Sales Klaten', outcome: 'Pelanggan meminta simulasi angsuran 24 bulan FIFGROUP.' }
@@ -788,10 +788,10 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       addressMasked: 'Jl. Pemuda No. ***',
       district: 'Klaten Utara',
       regency: 'Klaten',
-      nearestAhass: 'AHASS Naga Mas Klaten (2,5 km)',
+      nearestAhass: 'Dealer Naga Mas Klaten (2,5 km)',
       distanceKm: 2.5,
       travelTimeMin: 7,
-      alternateAhass: 'AHASS Delanggu Raya (8,0 km)',
+      alternateAhass: 'Dealer Delanggu Raya (8,0 km)',
       alternateDistanceKm: 8.0
     },
     nextBestAction: {
@@ -836,32 +836,32 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       warrantyStatus: 'Garansi Rangka 5 Th Aktif'
     },
     transactions: [
-      { id: 'TRX-025', date: '15 Mei 2026', type: 'Servis AHASS', description: 'Ganti Oli MPX2 + Servis CVT', outlet: 'AHASS Juwana Motor', amount: 'Rp145.000', status: 'Selesai' }
+      { id: 'TRX-025', date: '15 Mei 2026', type: 'Servis Dealer', description: 'Ganti Oli MPX2 + Servis CVT', outlet: 'Dealer Juwana Motor', amount: 'Rp145.000', status: 'Selesai' }
     ],
     serviceHistory: [
-      { id: 'SRV-016', date: '15 Mei 2026', serviceType: 'Servis Berkala & CVT', ahassName: 'AHASS Juwana', mechanicName: 'Hendri', odometerKm: 14900, cost: 'Rp145.000', notes: 'Ganti oli dan bersihkan kampas ganda CVT.', kpbStatus: 'Reguler Berbayar' }
+      { id: 'SRV-016', date: '15 Mei 2026', serviceType: 'Servis Berkala & CVT', ahassName: 'Dealer Juwana', mechanicName: 'Hendri', odometerKm: 14900, cost: 'Rp145.000', notes: 'Ganti oli dan bersihkan kampas ganda CVT.', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
       { id: 'INT-014', date: '10 Jul 2026', channel: 'SMS Blast', subject: 'Reminder Servis', sentiment: 'Netral', agent: 'Sistem', outcome: 'Tidak ada respon dari pelanggan.' }
     ],
     campaigns: [
-      { id: 'CMP-014', campaignName: 'Promo Merdeka AHASS Pati', channel: 'WhatsApp', sentDate: '15 Agu 2026', status: 'Diabaikan', incentive: 'Diskon Jasa 20%' }
+      { id: 'CMP-014', campaignName: 'Promo Merdeka Dealer Pati', channel: 'WhatsApp', sentDate: '15 Agu 2026', status: 'Diabaikan', incentive: 'Diskon Jasa 20%' }
     ],
     complaints: [
-      { id: 'CMPL-004', ticketNo: 'TKT-PTI-260420', date: '20 Apr 2026', category: 'Fasilitas Ruang Tunggu', status: 'Selesai', description: 'Ruang tunggu AC AHASS kurang dingin dan kursi terbatas.', resolution: 'Kepala Bengkel melakukan perbaikan AC dan menambah sofa tunggu pelanggan.' }
+      { id: 'CMPL-004', ticketNo: 'TKT-PTI-260420', date: '20 Apr 2026', category: 'Fasilitas Ruang Tunggu', status: 'Selesai', description: 'Ruang tunggu AC Dealer kurang dingin dan kursi terbatas.', resolution: 'Kepala Bengkel melakukan perbaikan AC dan menambah sofa tunggu pelanggan.' }
     ],
     locationAccess: {
       addressMasked: 'Jl. Silugonggo No. ***',
       district: 'Juwana',
       regency: 'Pati',
-      nearestAhass: 'AHASS Juwana Motor (7,1 km)',
+      nearestAhass: 'Dealer Juwana Motor (7,1 km)',
       distanceKm: 7.1,
       travelTimeMin: 20,
-      alternateAhass: 'AHASS Pati Kota (12,0 km)',
+      alternateAhass: 'Dealer Pati Kota (12,0 km)',
       alternateDistanceKm: 12.0
     },
     nextBestAction: {
-      title: 'Tawarkan Booking Prioritas di Ruang Tunggu VIP AHASS Juwana & Diskon Oli',
+      title: 'Tawarkan Booking Prioritas di Ruang Tunggu VIP Dealer Juwana & Diskon Oli',
       reason: 'Riwayat komplain ruang tunggu dan jarak tempuh 7,1 km membuat pelanggan enggan datang jika harus menunggu lama.',
       recommendedChannel: 'WhatsApp',
       recommendedTiming: 'Rabu, 10.00 WIB',
@@ -902,10 +902,10 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       warrantyStatus: 'Garansi Rangka 5 Th Aktif'
     },
     transactions: [
-      { id: 'TRX-026', date: '01 Sep 2026', type: 'Servis AHASS', description: 'Servis KPB 2 + Cek Smart Key', outlet: 'AHASS Cendana Kaliwungu', amount: 'Rp0', status: 'Selesai' }
+      { id: 'TRX-026', date: '01 Sep 2026', type: 'Servis Dealer', description: 'Servis KPB 2 + Cek Smart Key', outlet: 'Dealer Cendana Kaliwungu', amount: 'Rp0', status: 'Selesai' }
     ],
     serviceHistory: [
-      { id: 'SRV-017', date: '01 Sep 2026', serviceType: 'KPB 2 (4.000 km)', ahassName: 'AHASS Kaliwungu', mechanicName: 'Zaenal', odometerKm: 3900, cost: 'Rp0', notes: 'Servis KPB 2 selesai, setel rem belakang, cek aki dan baterai remote remote.', kpbStatus: 'Gratis Jasa' }
+      { id: 'SRV-017', date: '01 Sep 2026', serviceType: 'KPB 2 (4.000 km)', ahassName: 'Dealer Kaliwungu', mechanicName: 'Zaenal', odometerKm: 3900, cost: 'Rp0', notes: 'Servis KPB 2 selesai, setel rem belakang, cek aki dan baterai remote remote.', kpbStatus: 'Gratis Jasa' }
     ],
     interactions: [
       { id: 'INT-015', date: '01 Sep 2026', channel: 'WhatsApp Motorku X', subject: 'Rating Servis Bintang 5', sentiment: 'Positif', agent: 'Sistem', outcome: 'Sangat puas dengan kecepatan pengerjaan Fast Pit (20 menit).' }
@@ -918,10 +918,10 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       addressMasked: 'Jl. Raya Timur Kaliwungu No. ***',
       district: 'Kaliwungu',
       regency: 'Kendal',
-      nearestAhass: 'AHASS Cendana Kaliwungu (2,0 km)',
+      nearestAhass: 'Dealer Cendana Kaliwungu (2,0 km)',
       distanceKm: 2.0,
       travelTimeMin: 6,
-      alternateAhass: 'AHASS Mangkang Semarang (5,2 km)',
+      alternateAhass: 'Dealer Mangkang Semarang (5,2 km)',
       alternateDistanceKm: 5.2
     },
     nextBestAction: {
@@ -966,10 +966,10 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       warrantyStatus: 'Garansi Reguler'
     },
     transactions: [
-      { id: 'TRX-027', date: '10 Mei 2026', type: 'Servis AHASS', description: 'Ganti Oli AHM SPX1 + Setel Rantai & Suspensi Pro-Link', outlet: 'AHASS Mitra Bumiayu', amount: 'Rp215.000', status: 'Selesai' }
+      { id: 'TRX-027', date: '10 Mei 2026', type: 'Servis Dealer', description: 'Ganti Oli AHM SPX1 + Setel Rantai & Suspensi Pro-Link', outlet: 'Dealer Mitra Bumiayu', amount: 'Rp215.000', status: 'Selesai' }
     ],
     serviceHistory: [
-      { id: 'SRV-018', date: '10 Mei 2026', serviceType: 'Servis Berkala Motor Sport', ahassName: 'AHASS Bumiayu', mechanicName: 'Teguh', odometerKm: 20500, cost: 'Rp215.000', notes: 'Ganti oli SPX1, periksa swingarm dan pelumasan link suspensi.', kpbStatus: 'Reguler Berbayar' }
+      { id: 'SRV-018', date: '10 Mei 2026', serviceType: 'Servis Berkala Motor Sport', ahassName: 'Dealer Bumiayu', mechanicName: 'Teguh', odometerKm: 20500, cost: 'Rp215.000', notes: 'Ganti oli SPX1, periksa swingarm dan pelumasan link suspensi.', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
       { id: 'INT-016', date: '20 Jun 2026', channel: 'SMS Blast', subject: 'Pengingat Ganti Oli', sentiment: 'Netral', agent: 'Sistem', outcome: 'Belum ada konfirmasi.' }
@@ -982,15 +982,15 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       addressMasked: 'Jl. Pangeran Diponegoro No. ***',
       district: 'Bumiayu',
       regency: 'Brebes',
-      nearestAhass: 'AHASS Mitra Motor Bumiayu (8,9 km)',
+      nearestAhass: 'Dealer Mitra Motor Bumiayu (8,9 km)',
       distanceKm: 8.9,
       travelTimeMin: 26,
-      alternateAhass: 'AHASS Ajibarang Banyumas (14,0 km)',
+      alternateAhass: 'Dealer Ajibarang Banyumas (14,0 km)',
       alternateDistanceKm: 14.0
     },
     nextBestAction: {
       title: 'Tawarkan Servis Komunitas Trail & Voucher Oli SPX1 Khusus CRF',
-      reason: 'Pengguna CRF di jalur pegunungan Bumiayu berjarak 8,9 km ke AHASS. Promosi komunitas offroad efektif mendatangkan kembali.',
+      reason: 'Pengguna CRF di jalur pegunungan Bumiayu berjarak 8,9 km ke Dealer. Promosi komunitas offroad efektif mendatangkan kembali.',
       recommendedChannel: 'WhatsApp',
       recommendedTiming: 'Jumat, 15.00 WIB',
       approvalStatus: 'Perlu persetujuan',
@@ -1010,7 +1010,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       { area: 'Batang Kota', kab: 'Batang', plate: 'G', dealer: 'Batang Raya Motor', dist: 3.1 },
       { area: 'Pemalang Kota', kab: 'Pemalang', plate: 'G', dealer: 'Pemalang Indah Motor', dist: 4.0 },
       { area: 'Purwodadi', kab: 'Grobogan', plate: 'K', dealer: 'Purwodadi Sakti Motor', dist: 3.8 },
-      { area: 'Salatiga Sidomukti', kab: 'Kota Salatiga', plate: 'H', dealer: 'Astra Motor Salatiga', dist: 1.6 },
+      { area: 'Salatiga Sidomukti', kab: 'Kota Salatiga', plate: 'H', dealer: 'Dealer Salatiga', dist: 1.6 },
       { area: 'Ungaran Barat', kab: 'Semarang', plate: 'H', dealer: 'Ungaran Motor Raya', dist: 2.7 },
       { area: 'Temanggung Kota', kab: 'Temanggung', plate: 'AA', dealer: 'Temanggung Makmur', dist: 3.2 },
       { area: 'Banjarnegara Kota', kab: 'Banjarnegara', plate: 'R', dealer: 'Surya Banjarnegara', dist: 4.5 },
@@ -1019,21 +1019,21 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
     ][idx];
 
     const models = [
-      { model: 'Honda Vario 160 CBS', cc: '160 cc eSP+', color: 'Matte Blue', type: 'Servis AHASS', part: 'Ganti Oli SPX2' },
-      { model: 'Honda Scoopy Prestige White', cc: '110 cc eSP', color: 'Prestige White', type: 'Servis AHASS', part: 'Ganti Oli MPX2 & Busi' },
-      { model: 'Honda Stylo 160 ABS', cc: '160 cc eSP+', color: 'Royal Green', type: 'Servis AHASS', part: 'Servis KPB 2' },
-      { model: 'Honda BeAT Street', cc: '110 cc eSP', color: 'Street Silver', type: 'Servis AHASS', part: 'Ganti Oli MPX2' },
-      { model: 'Honda PCX 160 CBS', cc: '160 cc eSP+', color: 'Brilliant Black', type: 'Servis AHASS', part: 'Servis Berkala & CVT' },
-      { model: 'Honda CBR150R Victory Red', cc: '150 cc DOHC', color: 'Victory Red Black', type: 'Servis AHASS', part: 'Ganti Oli SPX1' },
-      { model: 'Honda ADV 160 CBS', cc: '160 cc eSP+', color: 'Dynamic Red', type: 'Servis AHASS', part: 'Servis CVT Berkala' },
-      { model: 'Honda Revo X', cc: '110 cc PGM-FI', color: 'Galaxy Blue', type: 'Servis AHASS', part: 'Tune Up Injeksi' },
-      { model: 'Honda Supra X 125 FI', cc: '125 cc PGM-FI', color: 'Golden Matte Black', type: 'Servis AHASS', part: 'Ganti Rantai & Oli' },
-      { model: 'Honda Genio CBS ISS', cc: '110 cc eSP', color: 'Radiant Black', type: 'Servis AHASS', part: 'Ganti Oli & Filter' },
-      { model: 'Honda Vario 125 Special Edition', cc: '125 cc eSP', color: 'Matte Blue', type: 'Servis AHASS', part: 'Ganti Kampas Rem' },
-      { model: 'Honda BeAT Deluxe', cc: '110 cc eSP', color: 'Deluxe Green', type: 'Servis AHASS', part: 'Servis KPB 3' },
-      { model: 'Honda CB150X Adventure', cc: '150 cc DOHC', color: 'Amazonia Green', type: 'Servis AHASS', part: 'Ganti Oli SPX1' },
-      { model: 'Honda Scoopy Fashion Blue', cc: '110 cc eSP', color: 'Fashion Blue', type: 'Servis AHASS', part: 'Servis Berkala' },
-      { model: 'Honda PCX 160 ABS', cc: '160 cc eSP+', color: 'Wonderful White', type: 'Servis AHASS', part: 'Servis Lengkap CVT' }
+      { model: 'Honda Vario 160 CBS', cc: '160 cc eSP+', color: 'Matte Blue', type: 'Servis Dealer', part: 'Ganti Oli SPX2' },
+      { model: 'Honda Scoopy Prestige White', cc: '110 cc eSP', color: 'Prestige White', type: 'Servis Dealer', part: 'Ganti Oli MPX2 & Busi' },
+      { model: 'Honda Stylo 160 ABS', cc: '160 cc eSP+', color: 'Royal Green', type: 'Servis Dealer', part: 'Servis KPB 2' },
+      { model: 'Honda BeAT Street', cc: '110 cc eSP', color: 'Street Silver', type: 'Servis Dealer', part: 'Ganti Oli MPX2' },
+      { model: 'Honda PCX 160 CBS', cc: '160 cc eSP+', color: 'Brilliant Black', type: 'Servis Dealer', part: 'Servis Berkala & CVT' },
+      { model: 'Honda CBR150R Victory Red', cc: '150 cc DOHC', color: 'Victory Red Black', type: 'Servis Dealer', part: 'Ganti Oli SPX1' },
+      { model: 'Honda ADV 160 CBS', cc: '160 cc eSP+', color: 'Dynamic Red', type: 'Servis Dealer', part: 'Servis CVT Berkala' },
+      { model: 'Honda Revo X', cc: '110 cc PGM-FI', color: 'Galaxy Blue', type: 'Servis Dealer', part: 'Tune Up Injeksi' },
+      { model: 'Honda Supra X 125 FI', cc: '125 cc PGM-FI', color: 'Golden Matte Black', type: 'Servis Dealer', part: 'Ganti Rantai & Oli' },
+      { model: 'Honda Genio CBS ISS', cc: '110 cc eSP', color: 'Radiant Black', type: 'Servis Dealer', part: 'Ganti Oli & Filter' },
+      { model: 'Honda Vario 125 Special Edition', cc: '125 cc eSP', color: 'Matte Blue', type: 'Servis Dealer', part: 'Ganti Kampas Rem' },
+      { model: 'Honda BeAT Deluxe', cc: '110 cc eSP', color: 'Deluxe Green', type: 'Servis Dealer', part: 'Servis KPB 3' },
+      { model: 'Honda CB150X Adventure', cc: '150 cc DOHC', color: 'Amazonia Green', type: 'Servis Dealer', part: 'Ganti Oli SPX1' },
+      { model: 'Honda Scoopy Fashion Blue', cc: '110 cc eSP', color: 'Fashion Blue', type: 'Servis Dealer', part: 'Servis Berkala' },
+      { model: 'Honda PCX 160 ABS', cc: '160 cc eSP+', color: 'Wonderful White', type: 'Servis Dealer', part: 'Servis Lengkap CVT' }
     ][idx];
 
     const isHighRisk = idx % 3 === 0;
@@ -1059,7 +1059,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       complaintStatus: (idx % 5 === 0 ? 'Dalam Proses' : 'Tidak Ada') as 'Dalam Proses' | 'Selesai' | 'Tidak Ada',
       behavioralAlert: isHighRisk
         ? `Jatuh tempo servis berkala terlewat lebih dari ${30 + idx * 2} hari pada unit ${models.model}.`
-        : `Pengguna aktif unit ${models.model}, riwayat servis terpantau stabil di AHASS ${areas.dealer}.`,
+        : `Pengguna aktif unit ${models.model}, riwayat servis terpantau stabil di Dealer ${areas.dealer}.`,
       vehicle: {
         model: models.model,
         plateNumberMasked: `${areas.plate} ${1000 + idx * 234} **`,
@@ -1078,9 +1078,9 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
         {
           id: `TRX-AUTO-0${custNum}`,
           date: `${10 + (idx % 18)} Ags 2026`,
-          type: 'Servis AHASS' as const,
-          description: `${models.part} di AHASS ${areas.dealer}`,
-          outlet: `AHASS ${areas.dealer}`,
+          type: 'Servis Dealer' as const,
+          description: `${models.part} di Dealer ${areas.dealer}`,
+          outlet: `Dealer ${areas.dealer}`,
           amount: `Rp${(145 + (idx % 5) * 35).toLocaleString('id-ID')}.000`,
           status: 'Selesai' as const
         }
@@ -1089,9 +1089,9 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
         {
           id: `SRV-AUTO-0${custNum}`,
           date: `${10 + (idx % 18)} Ags 2026`,
-          serviceType: 'Servis Berkala AHASS',
-          ahassName: `AHASS ${areas.dealer}`,
-          mechanicName: `Mekanik AHASS #${idx + 1}`,
+          serviceType: 'Servis Berkala Dealer',
+          ahassName: `Dealer ${areas.dealer}`,
+          mechanicName: `Mekanik Dealer #${idx + 1}`,
           odometerKm: 8200 + idx * 1750,
           cost: `Rp${(145 + (idx % 5) * 35).toLocaleString('id-ID')}.000`,
           notes: `Pengerjaan servis berkala dan pengecekan injeksi PGM-FI unit ${models.model}.`,
@@ -1103,9 +1103,9 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
           id: `INT-AUTO-0${custNum}`,
           date: `${15 + (idx % 14)} Ags 2026`,
           channel: 'WhatsApp Motorku X' as const,
-          subject: 'Reminder Servis & Promo AHASS',
+          subject: 'Reminder Servis & Promo Dealer',
           sentiment: 'Positif' as const,
-          agent: 'Customer Care AHASS',
+          agent: 'Customer Care Dealer',
           outcome: 'Pelanggan menerima informasi promo voucher servis.'
         }
       ],
@@ -1124,7 +1124,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
           id: `CMPL-AUTO-0${custNum}`,
           ticketNo: `TKT-JTG-${260000 + custNum}`,
           date: '10 Agu 2026',
-          category: 'Waktu Tunggu AHASS' as const,
+          category: 'Waktu Tunggu Dealer' as const,
           status: 'Dalam Penanganan' as const,
           description: 'Waktu tunggu servis pada jam sibuk hari Sabtu melebihi 30 menit.',
           resolution: 'Penjadwalan ulang melalui jalur booking Motorku X Fast Track.'
@@ -1134,10 +1134,10 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
         addressMasked: `Jl. Utama ${areas.area} No. ***`,
         district: areas.area,
         regency: areas.kab,
-        nearestAhass: `AHASS ${areas.dealer} (${areas.dist} km)`,
+        nearestAhass: `Dealer ${areas.dealer} (${areas.dist} km)`,
         distanceKm: areas.dist,
         travelTimeMin: Math.round(areas.dist * 2.8),
-        alternateAhass: `AHASS Regional ${areas.kab} (6,5 km)`,
+        alternateAhass: `Dealer Regional ${areas.kab} (6,5 km)`,
         alternateDistanceKm: 6.5
       },
       nextBestAction: {
@@ -1146,7 +1146,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
           : `Kirimkan Notifikasi Promo Perawatan ${models.model} via Motorku X`,
         reason: isHighRisk
           ? `Unit ${models.model} sudah melewati jadwal servis rutin di ${areas.kab}. Potensi churn dapat dimitigasi dengan voucher servis.`
-          : `Pelanggan memiliki kepuasan baik terhadap AHASS ${areas.dealer}. Tawarkan penukaran poin Motorku X.`,
+          : `Pelanggan memiliki kepuasan baik terhadap Dealer ${areas.dealer}. Tawarkan penukaran poin Motorku X.`,
         recommendedChannel: isHighRisk ? 'WhatsApp' : 'Mobile Push',
         recommendedTiming: 'Rabu, 10.30 WIB',
         approvalStatus: (isHighRisk ? 'Perlu persetujuan' : 'Disetujui') as 'Perlu persetujuan' | 'Disetujui' | 'Draft',

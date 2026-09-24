@@ -93,7 +93,7 @@ export function formatCustomersForExport(customers: CustomerProfile[]) {
     'Kategori Risiko': c.riskCategory,
     'Kanal Kontak': c.preferredChannel,
     'Status Izin Kontak': c.consentStatus,
-    'Jarak AHASS Terdekat (KM)': c.nearestServicePointKm,
+    'Jarak Dealer Terdekat (KM)': c.nearestServicePointKm,
     'Tenur Pelanggan (Bulan)': c.tenureMonths,
     'Rata-rata Pengeluaran': c.monthlySpendAvg,
     'Transaksi Terakhir': c.lastTransactionDate,
@@ -132,7 +132,7 @@ export function mapImportedRowToCustomer(row: any, index: number): CustomerProfi
   const riskCategory = (retentionRiskScore > 70 ? 'Tinggi' : retentionRiskScore < 30 ? 'Rendah' : 'Sedang') as 'Tinggi' | 'Sedang' | 'Rendah';
   const preferredChannel = (getVal('Kanal Kontak', 'preferredChannel') || 'WhatsApp') as any;
   const consentStatus = (getVal('Status Izin Kontak', 'consentStatus') || 'Diizinkan') as any;
-  const nearestServicePointKm = Number(getVal('Jarak AHASS Terdekat (KM)', 'nearestServicePointKm', 'Jarak')) || 3.5;
+  const nearestServicePointKm = Number(getVal('Jarak Dealer Terdekat (KM)', 'nearestServicePointKm', 'Jarak')) || 3.5;
   const tenureMonths = Number(getVal('Tenur Pelanggan (Bulan)', 'tenureMonths', 'Tenur')) || 18;
   const monthlySpendAvg = getVal('Rata-rata Pengeluaran', 'monthlySpendAvg') || 'Rp350.000';
   const lastTransactionDate = getVal('Transaksi Terakhir', 'lastTransactionDate') || '20 Agustus 2026';
@@ -146,11 +146,11 @@ export function mapImportedRowToCustomer(row: any, index: number): CustomerProfi
   const odometerKm = Number(getVal('Odometer (KM)', 'odometerKm', 'Odometer')) || 8500;
   const kpbStatus = getVal('Status KPB', 'kpbStatus') || 'KPB Selesai';
   const purchaseType = (getVal('Metode Pembelian', 'purchaseType') || 'Kredit (FIFGROUP)') as any;
-  const dealerPurchase = getVal('Dealer Pembelian', 'dealerPurchase') || 'Astra Motor Semarang';
+  const dealerPurchase = getVal('Dealer Pembelian', 'dealerPurchase') || 'Dealer Semarang';
   const warrantyStatus = getVal('Garansi Rangka/Mesin', 'warrantyStatus') || 'Garansi Rangka 5 Th Aktif';
 
   const nbaTitle = getVal('Rekomendasi AI (Next Best Action)', 'nbaTitle') || `Tawarkan Promo Perawatan Berkala ${model}`;
-  const nbaReason = getVal('Alasan Rekomendasi', 'nbaReason') || 'Pelanggan aktif berpotensi meningkatkan loyalitas layanan AHASS.';
+  const nbaReason = getVal('Alasan Rekomendasi', 'nbaReason') || 'Pelanggan aktif berpotensi meningkatkan loyalitas layanan Dealer.';
   const nbaChannel = getVal('Kanal Rekomendasi', 'nbaChannel') || preferredChannel || 'WhatsApp';
   const nbaTiming = getVal('Waktu Rekomendasi', 'nbaTiming') || 'Selasa, 10.00 WIB';
   const nbaConversion = getVal('Estimasi Konversi', 'nbaConversion') || '42,0%';
@@ -192,9 +192,9 @@ export function mapImportedRowToCustomer(row: any, index: number): CustomerProfi
       {
         id: `TRX-IMP-${idNum}`,
         date: lastTransactionDate,
-        type: 'Servis AHASS',
+        type: 'Servis Dealer',
         description: `Servis Berkala & Ganti Oli di ${dealerPurchase}`,
-        outlet: `AHASS ${dealerPurchase}`,
+        outlet: `Dealer ${dealerPurchase}`,
         amount: monthlySpendAvg,
         status: 'Selesai'
       }
@@ -203,9 +203,9 @@ export function mapImportedRowToCustomer(row: any, index: number): CustomerProfi
       {
         id: `SRV-IMP-${idNum}`,
         date: lastTransactionDate,
-        serviceType: 'Servis Berkala AHASS',
-        ahassName: `AHASS ${dealerPurchase}`,
-        mechanicName: 'Mekanik AHASS Bersertifikat',
+        serviceType: 'Servis Berkala Dealer',
+        ahassName: `Dealer ${dealerPurchase}`,
+        mechanicName: 'Mekanik Dealer Bersertifikat',
         odometerKm,
         cost: monthlySpendAvg,
         notes: `Pemeriksaan rutin dan penggantian suku cadang asli Honda (HGP).`,
@@ -219,7 +219,7 @@ export function mapImportedRowToCustomer(row: any, index: number): CustomerProfi
         channel: 'WhatsApp Motorku X',
         subject: 'Reminder Servis & Promo',
         sentiment: 'Positif',
-        agent: 'Customer Care AHASS',
+        agent: 'Customer Care Dealer',
         outcome: 'Pesan berhasil diterima pelanggan.'
       }
     ],
@@ -238,10 +238,10 @@ export function mapImportedRowToCustomer(row: any, index: number): CustomerProfi
       addressMasked: `Jl. Raya ${area} No. ***`,
       district: area,
       regency: kabupaten,
-      nearestAhass: `AHASS ${dealerPurchase} (${nearestServicePointKm} km)`,
+      nearestAhass: `Dealer ${dealerPurchase} (${nearestServicePointKm} km)`,
       distanceKm: nearestServicePointKm,
       travelTimeMin: Math.round(nearestServicePointKm * 2.5),
-      alternateAhass: `AHASS Alternatif ${kabupaten} (5,0 km)`,
+      alternateAhass: `Dealer Alternatif ${kabupaten} (5,0 km)`,
       alternateDistanceKm: 5.0
     },
     nextBestAction: {
@@ -270,14 +270,14 @@ export const TEMPLATES = {
       'Odometer (KM)': 9200,
       'Status KPB': 'KPB 2 Selesai',
       'Metode Pembelian': 'Kredit (FIFGROUP)',
-      'Dealer Pembelian': 'Astra Motor Semarang Center',
+      'Dealer Pembelian': 'Dealer Semarang Center',
       'Garansi Rangka/Mesin': 'Garansi Rangka 5 Th Aktif',
       'Skor Nilai Pelanggan (0-100)': 85,
       'Skor Risiko Churn (0-100)': 76,
       'Kategori Risiko': 'Tinggi',
       'Kanal Kontak': 'WhatsApp',
       'Status Izin Kontak': 'Diizinkan',
-      'Jarak AHASS Terdekat (KM)': 4.2,
+      'Jarak Dealer Terdekat (KM)': 4.2,
       'Tenur Pelanggan (Bulan)': 18,
       'Rata-rata Pengeluaran': 'Rp450.000',
       'Transaksi Terakhir': '12 Agustus 2026',
@@ -302,7 +302,7 @@ export const TEMPLATES = {
       'Longitude': 110.4229,
       'Tingkat Keramaian (1-10)': 9.8,
       'Potensi Pelanggan Harian': '12.500',
-      'Dekat Outlet AHASS': 'Astra Motor Gajah Mada (0.8 km)',
+      'Dekat Outlet Dealer': 'Dealer Gajah Mada (0.8 km)',
       'Keterangan': 'Pusat aktivitas bisnis dan mobilitas motor komuter'
     },
     {
@@ -315,7 +315,7 @@ export const TEMPLATES = {
       'Longitude': 110.4398,
       'Tingkat Keramaian (1-10)': 9.5,
       'Potensi Pelanggan Harian': '35.000',
-      'Dekat Outlet AHASS': 'AHASS Tembalang Motor (1.2 km)',
+      'Dekat Outlet Dealer': 'Dealer Tembalang Motor (1.2 km)',
       'Keterangan': 'Basis pengguna Honda BeAT, Scoopy & Vario segmen Gen-Z'
     }
   ],
@@ -371,9 +371,9 @@ export const TEMPLATES = {
   ],
   jaringan: [
     {
-      'Kode Jaringan': 'NET-AHS-001',
-      'Nama Outlet / Bengkel': 'Astra Motor Center Gajah Mada',
-      'Tipe Jaringan': 'Dealer 3S & Big Wing AHASS',
+      'Kode Jaringan': 'NET-DLR-001',
+      'Nama Outlet / Bengkel': 'Dealer Center Gajah Mada',
+      'Tipe Jaringan': 'Dealer 3S & Big Wing Dealer',
       'Kabupaten / Kota': 'Kota Semarang',
       'Kecamatan': 'Semarang Tengah',
       'Alamat Lengkap': 'Jl. Gajahmada No. 88, Semarang',
@@ -385,9 +385,9 @@ export const TEMPLATES = {
       'Nomor Kontak Telepon': '024-8413xxx'
     },
     {
-      'Kode Jaringan': 'NET-AHS-002',
-      'Nama Outlet / Bengkel': 'AHASS Pratama Motor Ungaran',
-      'Tipe Jaringan': 'Bengkel Resmi AHASS H23',
+      'Kode Jaringan': 'NET-DLR-002',
+      'Nama Outlet / Bengkel': 'Dealer Pratama Motor Ungaran',
+      'Tipe Jaringan': 'Bengkel Resmi Dealer H23',
       'Kabupaten / Kota': 'Semarang',
       'Kecamatan': 'Ungaran Barat',
       'Alamat Lengkap': 'Jl. Diponegoro No. 142, Ungaran',

@@ -178,7 +178,7 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
             </h1>
             <span className="text-xs px-2.5 py-0.5 rounded-full bg-red-50 text-red-700 font-semibold border border-red-200 flex items-center gap-1">
               <Bike className="w-3.5 h-3.5 text-red-600" />
-              <span>Astra Honda Motor · AHASS Jateng</span>
+              <span>Dealer Honda Motor · Dealer Jateng</span>
             </span>
             <span className="text-xs px-2.5 py-0.5 rounded-full bg-slate-100 text-[#15324B] font-semibold border border-slate-300 flex items-center gap-1">
               <Lock className="w-3 h-3 text-[#607080]" />
@@ -186,7 +186,7 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
             </span>
           </div>
           <p className="text-xs text-[#607080]">
-            Profil identitas aman 360°, unit motor Honda, riwayat perawatan berkala di AHASS, interaksi Motorku X, dan rekomendasi Next Best Action.
+            Profil identitas aman 360°, unit motor Honda, riwayat perawatan berkala di Dealer, interaksi Motorku X, dan rekomendasi Next Best Action.
           </p>
         </div>
 
@@ -253,7 +253,7 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
                     <FileSpreadsheet className="w-4 h-4 text-emerald-600 shrink-0" />
                     <div>
                       <div className="font-semibold text-slate-800">Unduh Format Excel (.xlsx)</div>
-                      <div className="text-[10px] text-slate-500">Lengkap dengan kolom AHASS &amp; Sales</div>
+                      <div className="text-[10px] text-slate-500">Lengkap dengan kolom Dealer &amp; Sales</div>
                     </div>
                   </button>
                   <button
@@ -294,7 +294,7 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
               onOpenAgentModal(
                 `Analisis profil pelanggan Honda ${customer.maskedName} (${customer.maskedId}) dengan unit ${
                   customer.vehicle?.model || 'Honda'
-                }. Apa rekomendasi retensi after sales terbaik di AHASS?`
+                }. Apa rekomendasi retensi after sales terbaik di Dealer?`
               )
             }
             className="px-3 py-2 bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-colors shadow-2xs cursor-pointer"
@@ -601,7 +601,7 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
             </div>
 
             <div className="pt-2.5 border-t border-[#DDE3EA] text-[10px] text-[#607080] flex items-center justify-between">
-              <span>Sistem CRM Dealer &amp; AHASS</span>
+              <span>Sistem CRM Dealer</span>
               <span className="text-emerald-700 font-medium">{customersList.length} Records Aktif</span>
             </div>
           </div>
@@ -718,10 +718,10 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
               {[
                 { id: 'ringkasan', label: 'Ringkasan' },
                 { id: 'produk', label: 'Unit Motor & Transaksi' },
-                { id: 'layanan', label: 'Riwayat Servis AHASS' },
+                { id: 'layanan', label: 'Riwayat Servis Dealer' },
                 { id: 'interaksi', label: 'Interaksi & Campaign' },
                 { id: 'keluhan', label: 'Keluhan Pelanggan' },
-                { id: 'lokasi', label: 'Lokasi & AHASS Terdekat' },
+                { id: 'lokasi', label: 'Lokasi & Dealer Terdekat' },
                 { id: 'rekomendasi', label: 'Rekomendasi AI' }
               ].map((tab) => (
                 <button
@@ -806,7 +806,7 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
                   <div>
                     <h4 className="font-bold text-xs text-[#17212B] uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
                       <Clock className="w-3.5 h-3.5 text-blue-600" />
-                      Lini Masa Terpadu (Layanan AHASS &amp; Interaksi)
+                      Lini Masa Terpadu (Layanan Dealer &amp; Interaksi)
                     </h4>
 
                     <div className="relative pl-5 space-y-3 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-[#DDE3EA]">
@@ -817,7 +817,7 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
                           <div className="p-2.5 rounded-lg border border-[#DDE3EA] bg-white">
                             <div className="flex items-center justify-between text-[11px] mb-1">
                               <span className="font-semibold text-slate-800">
-                                Servis AHASS: {customer.serviceHistory[0].serviceType}
+                                Servis Dealer: {customer.serviceHistory[0].serviceType}
                               </span>
                               <span className="text-slate-500 tabular-nums">{customer.serviceHistory[0].date}</span>
                             </div>
@@ -958,13 +958,13 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
                 </div>
               )}
 
-              {/* TAB 3: RIWAYAT SERVIS AHASS */}
+              {/* TAB 3: RIWAYAT SERVIS DEALER */}
               {activeTab === 'layanan' && (
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
                     <h4 className="font-bold text-xs text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <Wrench className="w-3.5 h-3.5 text-red-600" />
-                      Buku Servis Elektronik (e-KPB &amp; Servis Berkala AHASS)
+                      Buku Servis Elektronik (e-KPB &amp; Servis Berkala Dealer)
                     </h4>
                     <span className="text-[10px] text-slate-500 font-mono">
                       Total: {customer.serviceHistory?.length || 0} Riwayat Pengerjaan
@@ -1000,7 +1000,7 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
                       ))
                     ) : (
                       <div className="p-4 text-center text-slate-400 text-xs">
-                        Belum ada riwayat servis AHASS tercatat.
+                        Belum ada riwayat servis Dealer tercatat.
                       </div>
                     )}
                   </div>
@@ -1094,7 +1094,7 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
                   <div className="flex items-center justify-between">
                     <h4 className="font-bold text-xs text-slate-800 uppercase tracking-wider flex items-center gap-1.5">
                       <ShieldAlert className="w-3.5 h-3.5 text-amber-600" />
-                      Tiket Keluhan Pelanggan (Customer Care Astra Honda)
+                      Tiket Keluhan Pelanggan (Customer Care Dealer Honda)
                     </h4>
                     <span className="text-[10.5px] text-slate-500">
                       Status Umum:{' '}
@@ -1149,14 +1149,14 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
                 </div>
               )}
 
-              {/* TAB 6: LOKASI & AKSES KE AHASS */}
+              {/* TAB 6: LOKASI & AKSES KE DEALER */}
               {activeTab === 'lokasi' && (
                 <div className="space-y-4">
                   <div className="p-3.5 rounded-xl border border-blue-200 bg-blue-50/40 space-y-2">
                     <div className="flex items-center justify-between">
                       <span className="font-bold text-xs text-blue-950 flex items-center gap-1.5">
                         <MapPin className="w-4 h-4 text-blue-600" />
-                        Aksesibilitas Geospasial Pelanggan ke Jaringan AHASS
+                        Aksesibilitas Geospasial Pelanggan ke Jaringan Dealer
                       </span>
                       <span className="text-[10px] font-bold text-blue-800 bg-blue-100 px-2 py-0.5 rounded">
                         Wilayah {customer.kabupaten}
@@ -1175,9 +1175,9 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div className="p-3 rounded-xl border border-slate-200 bg-white space-y-1.5">
                       <div className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
-                        Bengkel Resmi AHASS Terdekat
+                        Bengkel Resmi Dealer Terdekat
                       </div>
-                      <div className="font-bold text-xs text-slate-800">{loc?.nearestAhass || 'AHASS Pusat'}</div>
+                      <div className="font-bold text-xs text-slate-800">{loc?.nearestAhass || 'Dealer Pusat'}</div>
                       <div className="flex items-center justify-between text-[11px] pt-1">
                         <span className="text-slate-500">Jarak Tempuh:</span>
                         <span
@@ -1197,9 +1197,9 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
 
                     <div className="p-3 rounded-xl border border-slate-200 bg-white space-y-1.5">
                       <div className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
-                        AHASS Alternatif Terdekat
+                        Dealer Alternatif Terdekat
                       </div>
-                      <div className="font-bold text-xs text-slate-800">{loc?.alternateAhass || 'AHASS Satelit'}</div>
+                      <div className="font-bold text-xs text-slate-800">{loc?.alternateAhass || 'Dealer Satelit'}</div>
                       <div className="flex items-center justify-between text-[11px] pt-1">
                         <span className="text-slate-500">Jarak Tempuh:</span>
                         <span className="font-bold font-mono text-slate-700">{loc?.alternateDistanceKm || 6.5} KM</span>
@@ -1215,8 +1215,8 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
                     <div className="p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-900 flex items-start gap-2">
                       <Info className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
                       <div>
-                        <strong>Rekomendasi Spasial:</strong> Jarak pelanggan ke AHASS terdekat melebihi batas
-                        kenyamanan (6 km). Tawarkan layanan <em>Service Kunjung AHASS</em> atau fasilitas{' '}
+                        <strong>Rekomendasi Spasial:</strong> Jarak pelanggan ke Dealer terdekat melebihi batas
+                        kenyamanan (6 km). Tawarkan layanan <em>Service Kunjung Dealer</em> atau fasilitas{' '}
                         <em>Pit Express Tanpa Antre</em> untuk mencegah perpindahan ke bengkel non-resmi.
                       </div>
                     </div>
@@ -1286,7 +1286,7 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
                 </div>
                 <div>
                   <h3 className="font-bold text-xs text-[#17212B]">Tindakan AI Terpilih</h3>
-                  <span className="text-[10px] text-emerald-700 font-medium">Model Preskriptif AHASS v1.3</span>
+                  <span className="text-[10px] text-emerald-700 font-medium">Model Preskriptif Dealer v1.3</span>
                 </div>
               </div>
 
@@ -1327,13 +1327,13 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
               {/* Geographic & Service Point Proximity */}
               <div className="p-3 rounded-lg border border-[#DDE3EA] bg-[#F5F7FA] space-y-1.5 text-xs">
                 <div className="text-[11px] font-semibold text-[#607080] flex items-center justify-between">
-                  <span>Jangkauan Jaringan AHASS</span>
+                  <span>Jangkauan Jaringan Dealer</span>
                   <Navigation className="w-3 h-3 text-blue-600" />
                 </div>
                 <div className="flex justify-between items-center text-[11px]">
                   <span className="text-[#607080]">Bengkel Terdekat:</span>
                   <span className="font-bold text-[#17212B] truncate max-w-[130px] text-right">
-                    {loc?.nearestAhass || 'AHASS Terdekat'}
+                    {loc?.nearestAhass || 'Dealer Terdekat'}
                   </span>
                 </div>
                 <div className="flex justify-between items-center text-[11px]">
@@ -1355,7 +1355,7 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
               {/* PDP & Security Badge */}
               <div className="p-2.5 rounded-lg border border-slate-200 bg-slate-50 text-[10px] text-slate-500 flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-                <span>Data disamarkan otomatis sesuai UU PDP &amp; standar Astra Honda Motor.</span>
+                <span>Data disamarkan otomatis sesuai UU PDP &amp; standar Dealer Honda Motor.</span>
               </div>
             </div>
 
@@ -1392,7 +1392,7 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
         isOpen={isImportModalOpen}
         onClose={() => setIsImportModalOpen(false)}
         title="Unggah Data Pelanggan (Excel / CSV)"
-        subtitle="Tambahkan atau perbarui data profil pelanggan Honda, riwayat servis AHASS, dan kepemilikan unit"
+        subtitle="Tambahkan atau perbarui data profil pelanggan Honda, riwayat servis Dealer, dan kepemilikan unit"
         templateType="customer"
         onDataImported={handleDataImported}
         onShowToast={onShowToast}
