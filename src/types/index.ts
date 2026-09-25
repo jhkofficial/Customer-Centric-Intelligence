@@ -113,7 +113,7 @@ export interface HondaServiceRecord {
 export interface HondaInteraction {
   id: string;
   date: string;
-  channel: 'WhatsApp Motorku X' | 'Telepon Follow Up' | 'Kunjungan Dealer' | 'Aplikasi Motorku X' | 'SMS Blast';
+  channel: 'WhatsApp Mobile Apps' | 'Telepon Follow Up' | 'Kunjungan Dealer' | 'Aplikasi Mobile Apps' | 'SMS Blast';
   subject: string;
   sentiment: 'Positif' | 'Netral' | 'Negatif';
   agent: string;
@@ -123,7 +123,7 @@ export interface HondaInteraction {
 export interface HondaCampaignRecord {
   id: string;
   campaignName: string;
-  channel: 'WhatsApp' | 'Push Motorku X' | 'SMS' | 'Email';
+  channel: 'WhatsApp' | 'Push Mobile Apps' | 'SMS' | 'Email';
   sentDate: string;
   status: 'Dikonversi' | 'Dibuka & Klik' | 'Terkirim' | 'Diabaikan';
   incentive: string;

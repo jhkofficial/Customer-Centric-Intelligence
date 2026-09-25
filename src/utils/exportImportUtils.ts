@@ -216,7 +216,7 @@ export function mapImportedRowToCustomer(row: any, index: number): CustomerProfi
       {
         id: `INT-IMP-${idNum}`,
         date: lastInteractionDate,
-        channel: 'WhatsApp Motorku X',
+        channel: 'WhatsApp Mobile Apps',
         subject: 'Reminder Servis & Promo',
         sentiment: 'Positif',
         agent: 'Customer Care Dealer',
@@ -405,7 +405,7 @@ export const TEMPLATES = {
       'Nama Kampanye Spasial': 'Satu Hati Service Fest Pantura',
       'Wilayah Target': 'Semarang, Kendal, Demak',
       'Tipe Kegiatan': 'Diskon Jasa Servis & Oli SPX',
-      'Kanal Distribusi': 'WhatsApp Blast & Motorku X',
+      'Kanal Distribusi': 'WhatsApp Blast & Mobile Apps',
       'Target Audiens (Pelanggan)': 15000,
       'Estimasi Respon (%)': 38.5,
       'Periode Pelaksanaan': '1-30 September 2026',

@@ -45,12 +45,12 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       { id: 'SRV-003', date: '22 Jun 2024', serviceType: 'KPB 1 (1.000 km)', ahassName: 'Dealer 0001 Gajahmada', mechanicName: 'Agus Riyanto', odometerKm: 980, cost: 'Rp0', notes: 'KPB 1 servis perdana, ganti oli AHM MPX2 gratis.', kpbStatus: 'Gratis Jasa & Oli' }
     ],
     interactions: [
-      { id: 'INT-001', date: '28 Ags 2026', channel: 'WhatsApp Motorku X', subject: 'Notifikasi Reminder Servis 10.000 KM', sentiment: 'Netral', agent: 'Sistem Otomasi Motorku X', outcome: 'Pesan terbaca (centang biru), belum ada konfirmasi booking jadwal.' },
+      { id: 'INT-001', date: '28 Ags 2026', channel: 'WhatsApp Mobile Apps', subject: 'Notifikasi Reminder Servis 10.000 KM', sentiment: 'Netral', agent: 'Sistem Otomasi Mobile Apps', outcome: 'Pesan terbaca (centang biru), belum ada konfirmasi booking jadwal.' },
       { id: 'INT-002', date: '15 Ags 2026', channel: 'Telepon Follow Up', subject: 'Customer Satisfaction Index (CSI) H+3', sentiment: 'Negatif', agent: 'Siti - Customer Care', outcome: 'Pelanggan mengeluhkan antrean Dealer padat dan waktu estimasi meleset.' }
     ],
     campaigns: [
       { id: 'CMP-001', campaignName: 'Promo Satu Hati Service Fest Dealer', channel: 'WhatsApp', sentDate: '25 Ags 2026', status: 'Dibuka & Klik', incentive: 'Diskon Jasa 20% + Voucher Part Rp25.000' },
-      { id: 'CMP-002', campaignName: 'Flash Voucher Oli AHM Motorku X', channel: 'Push Motorku X', sentDate: '10 Jul 2026', status: 'Diabaikan', incentive: 'Gratis Oli Gardan Matic' }
+      { id: 'CMP-002', campaignName: 'Flash Voucher Oli AHM Mobile Apps', channel: 'Push Mobile Apps', sentDate: '10 Jul 2026', status: 'Diabaikan', incentive: 'Gratis Oli Gardan Matic' }
     ],
     complaints: [
       { id: 'CMPL-001', ticketNo: 'TKT-SMG-260815', date: '15 Ags 2026', category: 'Waktu Tunggu Dealer', status: 'Dalam Penanganan', description: 'Waktu tunggu servis reguler melebihi 40 menit tanpa kepastian pit servis.', resolution: 'Dihubungi Kepala Bengkel untuk penjadwalan via Fast Track Pit Express.' }
@@ -92,7 +92,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
     lastTransactionDate: '05 September 2026',
     lastInteractionDate: '06 September 2026',
     complaintStatus: 'Tidak Ada',
-    behavioralAlert: 'Pelanggan sangat loyal, selalu tepat waktu servis berkala dan aktif menggunakan aplikasi Motorku X.',
+    behavioralAlert: 'Pelanggan sangat loyal, selalu tepat waktu servis berkala dan aktif menggunakan aplikasi Mobile Apps.',
     vehicle: {
       model: 'Honda ADV 160 ABS',
       plateNumberMasked: 'AD 2*** BQ',
@@ -117,7 +117,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       { id: 'SRV-005', date: '18 Apr 2026', serviceType: 'Servis Berkala & Tune Up', ahassName: 'Dealer Surya Inti Solo', mechanicName: 'Dwi Cahyono', odometerKm: 20100, cost: 'Rp210.000', notes: 'Ganti oli AHM SPX2, cek busi, reset ECM dan setel jarak renggang gas.', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
-      { id: 'INT-003', date: '06 Sep 2026', channel: 'WhatsApp Motorku X', subject: 'Konfirmasi Poin Motorku X', sentiment: 'Positif', agent: 'Motorku X Bot', outcome: 'Pelanggan menukarkan 150 poin Hepigo untuk voucher oli berikutnya.' }
+      { id: 'INT-003', date: '06 Sep 2026', channel: 'WhatsApp Mobile Apps', subject: 'Konfirmasi Poin Mobile Apps', sentiment: 'Positif', agent: 'Mobile Apps Bot', outcome: 'Pelanggan menukarkan 150 poin Hepigo untuk voucher oli berikutnya.' }
     ],
     campaigns: [
       { id: 'CMP-003', campaignName: 'Invitation Community Honda Jateng Touring', channel: 'WhatsApp', sentDate: '01 Sep 2026', status: 'Dikonversi', incentive: 'Apparel Honda Riding Jacket Eksklusif' }
@@ -183,7 +183,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       { id: 'SRV-006', date: '18 Jul 2026', serviceType: 'Ganti Oli & Cek Kelistrikan', ahassName: 'Dealer Nusantara Motor', mechanicName: 'Tri Haryanto', odometerKm: 32000, cost: 'Rp118.000', notes: 'Servis ringan, kondisi ban depan mulai tipis disarankan ganti sebelum musim hujan.', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
-      { id: 'INT-004', date: '20 Jul 2026', channel: 'WhatsApp Motorku X', subject: 'Kuesioner Minat Kendaraan Baru', sentiment: 'Positif', agent: 'Sales Advisor Rina', outcome: 'Pelanggan menanyakan simulasi tukar tambah ke Honda Stylo 160.' }
+      { id: 'INT-004', date: '20 Jul 2026', channel: 'WhatsApp Mobile Apps', subject: 'Kuesioner Minat Kendaraan Baru', sentiment: 'Positif', agent: 'Sales Advisor Rina', outcome: 'Pelanggan menanyakan simulasi tukar tambah ke Honda Stylo 160.' }
     ],
     campaigns: [
       { id: 'CMP-004', campaignName: 'Program Trade-In BeAT ke Stylo 160 Jateng', channel: 'WhatsApp', sentDate: '22 Jul 2026', status: 'Dibuka & Klik', incentive: 'Subsidi Uang Muka Rp1.200.000 + Jaket Eksklusif' }
@@ -294,7 +294,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
     lastTransactionDate: '14 September 2026',
     lastInteractionDate: '14 September 2026',
     complaintStatus: 'Tidak Ada',
-    behavioralAlert: 'Baru menyelesaikan KPB 2, pengguna aktif Motorku X dengan feedback bintang 5.',
+    behavioralAlert: 'Baru menyelesaikan KPB 2, pengguna aktif Mobile Apps dengan feedback bintang 5.',
     vehicle: {
       model: 'Honda Stylo 160 CBS',
       plateNumberMasked: 'AA 6*** GK',
@@ -317,10 +317,10 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       { id: 'SRV-008', date: '14 Sep 2026', serviceType: 'KPB 2 (4.000 km)', ahassName: 'Dealer Timbul Jaya Mertoyudan', mechanicName: 'Wawan S.', odometerKm: 4180, cost: 'Rp0', notes: 'Servis KPB 2, cek kelistrikan smart key, tekanan ban, oli MPX2 diganti.', kpbStatus: 'Gratis Jasa' }
     ],
     interactions: [
-      { id: 'INT-006', date: '14 Sep 2026', channel: 'Aplikasi Motorku X', subject: 'Rating Bintang 5 Servis KPB 2', sentiment: 'Positif', agent: 'Sistem', outcome: 'Ulasan sangat puas dengan ruang tunggu ber-AC dan minuman gratis.' }
+      { id: 'INT-006', date: '14 Sep 2026', channel: 'Aplikasi Mobile Apps', subject: 'Rating Bintang 5 Servis KPB 2', sentiment: 'Positif', agent: 'Sistem', outcome: 'Ulasan sangat puas dengan ruang tunggu ber-AC dan minuman gratis.' }
     ],
     campaigns: [
-      { id: 'CMP-006', campaignName: 'Welcome Pack Apparel Stylo Jateng', channel: 'Push Motorku X', sentDate: '01 Apr 2026', status: 'Dikonversi', incentive: 'Voucher Diskon Helm Honda Classic 20%' }
+      { id: 'CMP-006', campaignName: 'Welcome Pack Apparel Stylo Jateng', channel: 'Push Mobile Apps', sentDate: '01 Apr 2026', status: 'Dikonversi', incentive: 'Voucher Diskon Helm Honda Classic 20%' }
     ],
     complaints: [],
     locationAccess: {
@@ -383,7 +383,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       { id: 'SRV-009', date: '10 Jul 2026', serviceType: 'Servis Berkala & CVT', ahassName: 'Dealer Palma Motor Tegal', mechanicName: 'Iwan', odometerKm: 15400, cost: 'Rp145.000', notes: 'Pembersihan ruang CVT, disarankan ganti kampas ganda karena sudah mulai aus.', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
-      { id: 'INT-007', date: '15 Ags 2026', channel: 'WhatsApp Motorku X', subject: 'Eskalasi Inden Spare Part', sentiment: 'Negatif', agent: 'Part Officer Tegal', outcome: 'Pelanggan mempertanyakan kejelasan stok part kampas ganda.' }
+      { id: 'INT-007', date: '15 Ags 2026', channel: 'WhatsApp Mobile Apps', subject: 'Eskalasi Inden Spare Part', sentiment: 'Negatif', agent: 'Part Officer Tegal', outcome: 'Pelanggan mempertanyakan kejelasan stok part kampas ganda.' }
     ],
     campaigns: [
       { id: 'CMP-007', campaignName: 'Promo Merdeka Dealer Tegal', channel: 'WhatsApp', sentDate: '17 Ags 2026', status: 'Diabaikan', incentive: 'Diskon Jasa 17%' }
@@ -451,7 +451,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       { id: 'SRV-010', date: '01 Sep 2026', serviceType: 'Tune Up & Drive Chain', ahassName: 'Dealer Cendana Kedungwuni', mechanicName: 'Ahmad S.', odometerKm: 48100, cost: 'Rp345.000', notes: 'Ganti rantai set (drive chain kit HGP) dan oli mesin MPX1, kompresi mesin prima.', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
-      { id: 'INT-008', date: '01 Sep 2026', channel: 'WhatsApp Motorku X', subject: 'Invoice Servis Elektronik', sentiment: 'Positif', agent: 'Sistem', outcome: 'Invoice PDF diterima dan dibayar melalui QRIS DealerPay.' }
+      { id: 'INT-008', date: '01 Sep 2026', channel: 'WhatsApp Mobile Apps', subject: 'Invoice Servis Elektronik', sentiment: 'Positif', agent: 'Sistem', outcome: 'Invoice PDF diterima dan dibayar melalui QRIS DealerPay.' }
     ],
     campaigns: [
       { id: 'CMP-008', campaignName: 'Program Servis Fleet / Korporat UMKM Pekalongan', channel: 'WhatsApp', sentDate: '15 Agu 2026', status: 'Dikonversi', incentive: 'Potongan Jasa 25% untuk Minimal 2 Unit' }
@@ -517,7 +517,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       { id: 'SRV-011', date: '20 Mei 2026', serviceType: 'Servis Berkala & Ganti Oli', ahassName: 'Dealer Kompo Cilacap', mechanicName: 'Rahmat H.', odometerKm: 12100, cost: 'Rp220.000', notes: 'Ganti oli SPX1 1.2L, cek celah klep DOHC dan setel kopling manual.', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
-      { id: 'INT-009', date: '12 Jul 2026', channel: 'WhatsApp Motorku X', subject: 'Pengingat Ganti Oli SPX1', sentiment: 'Netral', agent: 'Sistem', outcome: 'Belum ada konfirmasi booking dari pelanggan.' }
+      { id: 'INT-009', date: '12 Jul 2026', channel: 'WhatsApp Mobile Apps', subject: 'Pengingat Ganti Oli SPX1', sentiment: 'Netral', agent: 'Sistem', outcome: 'Belum ada konfirmasi booking dari pelanggan.' }
     ],
     campaigns: [
       { id: 'CMP-009', campaignName: 'Promo Sport Honda Jateng Riders', channel: 'WhatsApp', sentDate: '01 Agu 2026', status: 'Dibuka & Klik', incentive: 'Diskon Jasa Servis Sport 25%' }
@@ -583,7 +583,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       { id: 'SRV-012', date: '02 Sep 2026', serviceType: 'Servis Berkala & Ganti Oli', ahassName: 'Dealer Mranggen', mechanicName: 'Joko S.', odometerKm: 25800, cost: 'Rp135.000', notes: 'Ganti oli MPX2, periksa ketebalan v-belt masih dalam toleransi aman (18,2 mm).', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
-      { id: 'INT-010', date: '03 Sep 2026', channel: 'WhatsApp Motorku X', subject: 'Survei Kepuasan Servis', sentiment: 'Positif', agent: 'Sistem', outcome: 'Memberikan skor 10/10 dan memuji keramahan service advisor.' }
+      { id: 'INT-010', date: '03 Sep 2026', channel: 'WhatsApp Mobile Apps', subject: 'Survei Kepuasan Servis', sentiment: 'Positif', agent: 'Sistem', outcome: 'Memberikan skor 10/10 dan memuji keramahan service advisor.' }
     ],
     campaigns: [
       { id: 'CMP-010', campaignName: 'Promo Komuter Tangguh Dealer Demak', channel: 'WhatsApp', sentDate: '20 Agu 2026', status: 'Dikonversi', incentive: 'Gratis Pembersihan Injektor' }
@@ -649,7 +649,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       { id: 'SRV-013', date: '10 Ags 2026', serviceType: 'Inspeksi Berkala EV', ahassName: 'Dealer EV Center Jepara', mechanicName: 'Bambang E.', odometerKm: 3750, cost: 'Rp0', notes: 'Inspeksi motor drive, konektor baterai Honda MPP e: bersih, kalibrasi ECU EV.', kpbStatus: 'Gratis Jasa' }
     ],
     interactions: [
-      { id: 'INT-011', date: '11 Ags 2026', channel: 'WhatsApp Motorku X', subject: 'Edukasi Titik B swap Jateng', sentiment: 'Positif', agent: 'EV Specialist', outcome: 'Pelanggan menerima peta titik B-Swap Dealer di Kudus dan Semarang.' }
+      { id: 'INT-011', date: '11 Ags 2026', channel: 'WhatsApp Mobile Apps', subject: 'Edukasi Titik B swap Jateng', sentiment: 'Positif', agent: 'EV Specialist', outcome: 'Pelanggan menerima peta titik B-Swap Dealer di Kudus dan Semarang.' }
     ],
     campaigns: [
       { id: 'CMP-011', campaignName: 'Program Komunitas Motor Listrik Honda Jateng', channel: 'WhatsApp', sentDate: '01 Agu 2026', status: 'Dikonversi', incentive: 'Gratis Aksesoris Rear Carrier Resmi' }
@@ -714,10 +714,10 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       { id: 'SRV-014', date: '04 Sep 2026', serviceType: 'Servis Berkala & Pendingin', ahassName: 'Dealer Kartasura', mechanicName: 'Danang', odometerKm: 17000, cost: 'Rp195.000', notes: 'Ganti oli SPX2 dan kuras cairan coolant radiator AHM.', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
-      { id: 'INT-012', date: '04 Sep 2026', channel: 'WhatsApp Motorku X', subject: 'Konfirmasi Booking Berhasil', sentiment: 'Positif', agent: 'Sistem', outcome: 'Servis selesai tepat waktu dalam 35 menit.' }
+      { id: 'INT-012', date: '04 Sep 2026', channel: 'WhatsApp Mobile Apps', subject: 'Konfirmasi Booking Berhasil', sentiment: 'Positif', agent: 'Sistem', outcome: 'Servis selesai tepat waktu dalam 35 menit.' }
     ],
     campaigns: [
-      { id: 'CMP-012', campaignName: 'Service Reward Point Motorku X', channel: 'Push Motorku X', sentDate: '01 Sep 2026', status: 'Dikonversi', incentive: 'Cashback DealerPay Rp25.000' }
+      { id: 'CMP-012', campaignName: 'Service Reward Point Mobile Apps', channel: 'Push Mobile Apps', sentDate: '01 Sep 2026', status: 'Dikonversi', incentive: 'Cashback DealerPay Rp25.000' }
     ],
     complaints: [],
     locationAccess: {
@@ -778,7 +778,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       { id: 'SRV-015', date: '24 Jul 2026', serviceType: 'Ganti Ban & Tune Up', ahassName: 'Dealer Naga Mas Klaten', mechanicName: 'Gunawan', odometerKm: 34000, cost: 'Rp340.000', notes: 'Ban belakang botak diganti part Federal Tire HGP.', kpbStatus: 'Reguler Berbayar' }
     ],
     interactions: [
-      { id: 'INT-013', date: '25 Jul 2026', channel: 'WhatsApp Motorku X', subject: 'Simulasi Trade-In Vario 160', sentiment: 'Positif', agent: 'Sales Klaten', outcome: 'Pelanggan meminta simulasi angsuran 24 bulan FIFGROUP.' }
+      { id: 'INT-013', date: '25 Jul 2026', channel: 'WhatsApp Mobile Apps', subject: 'Simulasi Trade-In Vario 160', sentiment: 'Positif', agent: 'Sales Klaten', outcome: 'Pelanggan meminta simulasi angsuran 24 bulan FIFGROUP.' }
     ],
     campaigns: [
       { id: 'CMP-013', campaignName: 'Promo Upgrade Matic 160cc Jateng', channel: 'WhatsApp', sentDate: '26 Jul 2026', status: 'Dibuka & Klik', incentive: 'Potongan Angsuran Rp50.000/bln' }
@@ -908,10 +908,10 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       { id: 'SRV-017', date: '01 Sep 2026', serviceType: 'KPB 2 (4.000 km)', ahassName: 'Dealer Kaliwungu', mechanicName: 'Zaenal', odometerKm: 3900, cost: 'Rp0', notes: 'Servis KPB 2 selesai, setel rem belakang, cek aki dan baterai remote remote.', kpbStatus: 'Gratis Jasa' }
     ],
     interactions: [
-      { id: 'INT-015', date: '01 Sep 2026', channel: 'WhatsApp Motorku X', subject: 'Rating Servis Bintang 5', sentiment: 'Positif', agent: 'Sistem', outcome: 'Sangat puas dengan kecepatan pengerjaan Fast Pit (20 menit).' }
+      { id: 'INT-015', date: '01 Sep 2026', channel: 'WhatsApp Mobile Apps', subject: 'Rating Servis Bintang 5', sentiment: 'Positif', agent: 'Sistem', outcome: 'Sangat puas dengan kecepatan pengerjaan Fast Pit (20 menit).' }
     ],
     campaigns: [
-      { id: 'CMP-015', campaignName: 'Aksesoris Resmi BeAT HGA Diskon 15%', channel: 'Push Motorku X', sentDate: '15 Mei 2026', status: 'Dikonversi', incentive: 'Voucher HGA Garnish Knalpot' }
+      { id: 'CMP-015', campaignName: 'Aksesoris Resmi BeAT HGA Diskon 15%', channel: 'Push Mobile Apps', sentDate: '15 Mei 2026', status: 'Dikonversi', incentive: 'Voucher HGA Garnish Knalpot' }
     ],
     complaints: [],
     locationAccess: {
@@ -1102,7 +1102,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
         {
           id: `INT-AUTO-0${custNum}`,
           date: `${15 + (idx % 14)} Ags 2026`,
-          channel: 'WhatsApp Motorku X' as const,
+          channel: 'WhatsApp Mobile Apps' as const,
           subject: 'Reminder Servis & Promo Dealer',
           sentiment: 'Positif' as const,
           agent: 'Customer Care Dealer',
@@ -1127,7 +1127,7 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
           category: 'Waktu Tunggu Dealer' as const,
           status: 'Dalam Penanganan' as const,
           description: 'Waktu tunggu servis pada jam sibuk hari Sabtu melebihi 30 menit.',
-          resolution: 'Penjadwalan ulang melalui jalur booking Motorku X Fast Track.'
+          resolution: 'Penjadwalan ulang melalui jalur booking Mobile Apps Fast Track.'
         }
       ] : [],
       locationAccess: {
@@ -1143,10 +1143,10 @@ export const HONDA_CUSTOMERS: CustomerProfile[] = [
       nextBestAction: {
         title: isHighRisk
           ? `Hubungi Pemilik ${models.model} dengan Voucher Servis & Gratis Antrean Pit Express`
-          : `Kirimkan Notifikasi Promo Perawatan ${models.model} via Motorku X`,
+          : `Kirimkan Notifikasi Promo Perawatan ${models.model} via Mobile Apps`,
         reason: isHighRisk
           ? `Unit ${models.model} sudah melewati jadwal servis rutin di ${areas.kab}. Potensi churn dapat dimitigasi dengan voucher servis.`
-          : `Pelanggan memiliki kepuasan baik terhadap Dealer ${areas.dealer}. Tawarkan penukaran poin Motorku X.`,
+          : `Pelanggan memiliki kepuasan baik terhadap Dealer ${areas.dealer}. Tawarkan penukaran poin Mobile Apps.`,
         recommendedChannel: isHighRisk ? 'WhatsApp' : 'Mobile Push',
         recommendedTiming: 'Rabu, 10.30 WIB',
         approvalStatus: (isHighRisk ? 'Perlu persetujuan' : 'Disetujui') as 'Perlu persetujuan' | 'Disetujui' | 'Draft',

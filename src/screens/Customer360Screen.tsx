@@ -186,7 +186,7 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
             </span>
           </div>
           <p className="text-xs text-[#607080]">
-            Profil identitas aman 360°, unit motor Honda, riwayat perawatan berkala di Dealer, interaksi Motorku X, dan rekomendasi Next Best Action.
+            Profil identitas aman 360°, unit motor Honda, riwayat perawatan berkala di Dealer, interaksi Mobile Apps, dan rekomendasi Next Best Action.
           </p>
         </div>
 
@@ -1013,7 +1013,7 @@ export const Customer360Screen: React.FC<Customer360ScreenProps> = ({
                   <div>
                     <h4 className="font-bold text-xs text-slate-800 uppercase tracking-wider mb-2 flex items-center gap-1.5">
                       <MessageSquare className="w-3.5 h-3.5 text-blue-600" />
-                      Interaksi Omnichannel (Motorku X / CS / Telepon)
+                      Interaksi Omnichannel (Mobile Apps / CS / Telepon)
                     </h4>
                     <div className="space-y-2">
                       {customer.interactions && customer.interactions.length > 0 ? (

@@ -184,7 +184,7 @@ export const INITIAL_MARKET_DATA: MarketRecord[] = [
     competitorShare: 21.6,
     annualTargetUnits: 42000,
     growthCategory: 'Tinggi',
-    strategicDefense: 'Pit Express & Fasilitas Booking Motorku X Fast Track',
+    strategicDefense: 'Pit Express & Fasilitas Booking Mobile Apps Fast Track',
     opportunityValue: 'Rp14,2 Miliar'
   },
   {
@@ -411,7 +411,7 @@ export const INITIAL_SPATIAL_CAMPAIGNS: SpatialCampaignRecord[] = [
     campaignName: 'Satu Hati Service Fest Pantura',
     targetRegion: 'Semarang, Demak, Kendal, Batang',
     activityType: 'Voucher Servis & Diskon Oli SPX2 20%',
-    channels: 'WhatsApp Motorku X & SMS',
+    channels: 'WhatsApp Mobile Apps & SMS',
     targetAudience: 18500,
     expectedResponseRate: '36,4%',
     period: '01–30 September 2026',
@@ -423,7 +423,7 @@ export const INITIAL_SPATIAL_CAMPAIGNS: SpatialCampaignRecord[] = [
     campaignName: 'Roadshow Trade-In Stylo 160 Solo Raya',
     targetRegion: 'Surakarta, Sukoharjo, Klaten, Karanganyar',
     activityType: 'Pameran Mall & Subsidi Uang Muka FIFGROUP',
-    channels: 'Push App Motorku X & Booth Mall',
+    channels: 'Push App Mobile Apps & Booth Mall',
     targetAudience: 12000,
     expectedResponseRate: '28,5%',
     period: '15–28 Oktober 2026',

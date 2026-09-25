@@ -324,7 +324,7 @@ export const MarketPoiDemographicsScreen: React.FC<MarketPoiDemographicsScreenPr
           campaignName: getVal(r, 'Nama Kampanye Spasial', 'campaignName') || 'Kampanye Spasial Baru',
           targetRegion: getVal(r, 'Wilayah Target', 'targetRegion') || 'Semarang & Sekitarnya',
           activityType: getVal(r, 'Tipe Kegiatan', 'activityType') || 'Voucher Servis & Oli',
-          channels: getVal(r, 'Kanal Distribusi', 'channels') || 'WhatsApp Motorku X',
+          channels: getVal(r, 'Kanal Distribusi', 'channels') || 'WhatsApp Mobile Apps',
           targetAudience: Number(getVal(r, 'Target Audiens (Pelanggan)', 'targetAudience')) || 10000,
           expectedResponseRate: getVal(r, 'Estimasi Respon (%)', 'expectedResponseRate') || '35%',
           period: getVal(r, 'Periode Pelaksanaan', 'period') || 'Bulan Ini',
